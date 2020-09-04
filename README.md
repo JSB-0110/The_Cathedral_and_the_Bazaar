@@ -8,7 +8,27 @@ Translation by Ajou University
 
 성공적인 오픈 소스 프로젝트인 fetchmail을 분석한다. 이 프로젝트는 리눅스의 역사에 의해 제시된 놀라운 소프트웨어 엔지니어링 이론을 신중하게 테스트하기 위해 실행된 것이다. 이 이론들을 두 개의 근본적으로 다른 개발 스타일의 용어들로 논할 것이다. 두가지 스타일이란 상업용 소프트웨어의 ``성당'' 모델과 리눅스 세계의 ``시장'' 모델이다. 이 모델들은 소프트웨어 디버깅 작업의 본질에 대한 서로 대립되는 가설들로부터 파생되었다는 것을 보일 것이다. 그리고 나서 리눅스의 경험으로부터 ``충분히 많은 사람이 있다면, 찾을 수 없는 버그란 없다'' 는 일관된 주장을 펴고, 이기적인 에이전트의 자가수정 시스템과의 생산적인 비유를 제시한 다음, 소프트웨어의 미래를 위해 이 통찰이 가지는 의미에 대한 탐구로 마무리짓는다.
 
-차례
+### table of contents
+
+- The Cathedral and the Bazaar
+- The Mail Must Get Through
+- The Importance of Having Users
+- Release Early, Release Often
+- How Many Eyeballs Tame Complexity
+- When Is a Rose Not a Rose?
+- Popclient becomes Fetchmail
+- Fetchmail Grows Up
+- A Few More Lessons from Fetchmail
+- Necessary Preconditions for the Bazaar Style
+- The Social Context of Open-Source Software
+- On Management and the Maginot Line
+- Epilog: Netscape Embraces the Bazaar
+- Notes
+- Bibliography
+- Acknowledgements
+
+
+### 차례
 
 - 성당과 시장
 - 메일은 배달되어야만 한다.
@@ -24,6 +44,7 @@ Translation by Ajou University
 - 읽어볼 만한 글들
 - 후기 : 넷스케이프가 시장 스타일을 받아들이다!
 - 버전과 변경 이력
+
 
 
 ## 성당과 시장
