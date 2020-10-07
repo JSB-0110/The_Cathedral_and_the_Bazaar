@@ -1,11 +1,21 @@
 # The Cathedral and the Bazaar
+
+Copyright © 2000 Eric S. Raymond
+
 The Cathedral and the Bazaar by Eric S. Raymond
-Translation by Ajou University
+
+Copyright © 2020 Ajou University
+
+Translate in Korean by Ajou University
+
+Permission is granted to copy, distribute and/or modify this document under the terms of the Open Publication License, version 2.0.
+
+$Date: 2020/10/08 09:02:14 $
 
 ### 문서이력 
 
-* KLDP를 참조하여 복사함 2011/02/08
 * merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
+* KLDP 번역 2011/02/08 버전을 병합함
 
 ### Abstract
 
@@ -49,8 +59,6 @@ I anatomize a successful open-source project, fetchmail, that was run as a delib
 - 읽어볼 만한 글들
 - 후기 : 넷스케이프가 시장 스타일을 받아들이다!
 - 버전과 변경 이력
-
-
 
 ## 성당과 시장
 
