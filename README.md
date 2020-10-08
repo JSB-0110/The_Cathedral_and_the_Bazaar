@@ -719,7 +719,7 @@ It is not a coincidence that Linus is a nice guy who makes people like him and w
 
 ## 오픈 소스 소프트웨어의 사회적 문맥
 
-It is truly written: the best hacks start out as personal solutions to the author's everyday problems, and spread because the problem turns out to be typical for a large class of users. This takes us back to the matter of rule 1, restated in a perhaps more useful way:
+(KimSumin)It is truly written: the best hacks start out as personal solutions to the author's everyday problems, and spread because the problem turns out to be typical for a large class of users. This takes us back to the matter of rule 1, restated in a perhaps more useful way:
 
 다음과 같은 말이 있다. 가장 뛰어난 해킹은 해커의 일상적인 문제를 푸는 개인적인 해결책으로 시작한다. 그리고 그 문제가 많은 사용자들에게 전형적이라는 것이 밝혀지면 널리 퍼지게 된다. 첫번째 법칙으로 되돌아와 (아마도) 더 유용한 방식으로 다시 말해보자.
 
