@@ -425,7 +425,7 @@ fetchmail이 SMTP 포트로 가져온 메일을 어떻게 전달해야 하는지
 * And I listened to my beta-testers, polling them about design decisions and stroking them whenever they sent in patches and feedback.
 * 그리고 그들의 이야기를 들었다. 설계 결정에 대해 투표를 하기도 했고 패치나 피드백을 보내올 때마다 베타테스터들을 구슬렀다.
 
-The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
+(정세빈) The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
 
 이 단순한 방법들은 즉각 효력을 나타냈다. 프로젝트를 시작할 때부터 개발자들이라면 학수고대할 만한 버그 리포트를, 때로는 훌륭하게 수정된 코드를 받을 수 있었다. 사려깊은 비판과 팬 메일, 기능제안들을 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있다.
 
@@ -440,7 +440,7 @@ fetchmail 의 성공을 재는 재미있는 척도 중 하나는 프로젝트 �
 Actually, when I revised in late May 1997 I found the list was beginning to lose members from its high of close to 300 for an interesting reason. Several people have asked me to unsubscribe them because fetchmail is working so well for them that they no longer need to see the list traffic! Perhaps this is part of the normal life-cycle of a mature bazaar-style project.
 
 1997 년 5월말 경에 글을 수정하면서 보니까 목록은 300명 가까이 되었고, 멤버들이 조금씩 줄기 시작했는데 그 이유가 흥미로왔다. 몇몇 사람들이 구독을 중단하면서 fetchmail 이 잘 작동하기 때문에 더 이상 메일링리스트를 보고 있을 이유가 없다고 말했다. 아마 이것이 성숙한 시장 스타일의 프로젝트가 가지는 정상적인 라이프사이클 중 하나일 것이다.
-(정세빈)
+
 
 
 ## Popclient becomes Fetchmail
