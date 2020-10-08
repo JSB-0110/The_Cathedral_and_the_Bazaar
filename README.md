@@ -757,7 +757,7 @@ Before cheap Internet, there were some geographically compact communities where 
 
 싼 가격에 인터넷을 이용할 수 있게 되기 전에는 지리적으로 좁은 지역에서 공동체가 자리잡고 있었고, 그 공동체의 문화는 와인버그의 ``자아를 내세우지 않는'' 프로그래밍이 장려되었으며 개발자들은 쉽게 많은 사람들, 숙련된 훈수꾼들과 공동개발자들을 끌어들일 수 있었다. 벨 연구소, MIT 인공지능 연구소, UC 버클리 -- 이곳이 바로 전설적인 혁신들이 일어난 곳이고, 여전히 그런 잠재력을 가지고 있는 곳이다.
 
-Linux was the first project for which a conscious and successful effort to use the entire world as its talent pool was made. I don't think it's a coincidence that the gestation period of Linux coincided with the birth of the World Wide Web, and that Linux left its infancy during the same period in 1993–1994 that saw the takeoff of the ISP industry and the explosion of mainstream interest in the Internet. Linus was the first person who learned how to play by the new rules that pervasive Internet access made possible.
+(유건)Linux was the first project for which a conscious and successful effort to use the entire world as its talent pool was made. I don't think it's a coincidence that the gestation period of Linux coincided with the birth of the World Wide Web, and that Linux left its infancy during the same period in 1993–1994 that saw the takeoff of the ISP industry and the explosion of mainstream interest in the Internet. Linus was the first person who learned how to play by the new rules that pervasive Internet access made possible.
 
 리눅스는 재능을 끌어올 풀(pool) 로 전세계를 사용하기 위해 의식적으로, 또 성공적으로 노력한 최초의 프로젝트였다. 나는 리눅스의 태동기가 월드와이드 웹의 탄생과 일치하는 것을, 그리고 리눅스가 유아기를 벗어나던 1993-1994년 경에 ISP 산업과 인터넷에 주류의 관심이 폭발하기 시작했던 것을 우연이라고 생각하지 않는다. 리누스는 급속히 보급되는 인터넷을 가능하게 했던 그 규칙에 따라 어떻게 일을 진행해야 하는지 알았던 최초의 사람이다.
 
