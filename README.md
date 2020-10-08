@@ -616,13 +616,14 @@ The rc (control) file syntax includes optional `noise' keywords that are entirel
 These started out as a late-night experiment when I noticed how much the rc file declarations were beginning to resemble an imperative minilanguage. (This is also why I changed the original popclient ``server'' keyword to ``poll'').
 
 명령형 소언어를 더 영어처럼 만들면 사용하기 쉬울 것으로 보였다. 지금은 내가 비록 Emacs 나 HTML, 그리고 많은 데이터베이스 엔진에서 볼 수 있듯이 설계를 할 때 ``언어처럼 만드는'' 파의 일원이긴 하지만 ``영어와 비슷한'' 구분을 가지는 것에 대해서는 그다지 달가와 하지 않는다.
-
+(박주희)
 It seemed to me that trying to make that imperative minilanguage more like English might make it easier to use. Now, although I'm a convinced partisan of the ``make it a language'' school of design as exemplified by Emacs and HTML and many database engines, I am not normally a big fan of ``English-like'' syntaxes.
 
 Traditionally programmers have tended to favor control syntaxes that are very precise and compact and have no redundancy at all. This is a cultural legacy from when computing resources were expensive, so parsing stages had to be as cheap and simple as possible. English, with about 50% redundancy, looked like a very inappropriate model then.
 
 전통적인 프로그래머들은 정확하고 짧으며 중복을 허용하지 않는 제어구문을 선호하는 경향이 있다. 이것은 컴퓨팅 자원이 비싸서 파싱하는 단계가 최대한 싸고 간단해야 했을 때부터 내려온 문화적 유산이다. 영어는 대략 50% 정도의 중복을 허용하므로 대단히 부적절한 모델인 것으로 보인다.
 
+(김범조)
 This is not my reason for normally avoiding English-like syntaxes; I mention it here only to demolish it. With cheap cycles and core, terseness should not be an end in itself. Nowadays it's more important for a language to be convenient for humans than to be cheap for the computer.
 
 이것이 내가 영어와 비슷한 구문을 일반적으로 피하는 이유는 아니다. 이 문제를 언급한 이유는 그런 관습을 없애기 위해서다. 사이클과 코어의 값이 싸졌는데도 간명함은 저절로 없어지지는 않았다. 최근에는 언어가 컴퓨터의 관점에서 싼 가격이라는 점보다는 사람에게 편리한가 하는 점이 더 중요하다.
@@ -630,6 +631,8 @@ This is not my reason for normally avoiding English-like syntaxes; I mention it 
 There remain, however, good reasons to be wary. One is the complexity cost of the parsing stage—you don't want to raise that to the point where it's a significant source of bugs and user confusion in itself. Another is that trying to make a language syntax English-like often demands that the ``English'' it speaks be bent seriously out of shape, so much so that the superficial resemblance to natural language is as confusing as a traditional syntax would have been. (You see this bad effect in a lot of so-called ``fourth generation'' and commercial database-query languages.)
 
 물론 조심해야 할 이유는 충분히 있다. 한 가지는 파싱하는 단계의 복잡성에 대한 비용이다 -- 파싱하는 단계를 버그가 우글거리는 데다가 사용자로 하여금 그 자체만으로 혼란을 일으키게 만들고 싶지는 않을 것이다. 또 하나의 이유는 언어의 구문을 영어와 비슷하게 만들려고 노력하면 그 ``영어'' 가 심각하게 왜곡되어 자연어와의 피상적인 유사점이 전통적인 구문만큼이나 혼란스럽게 되는 경우가 많다는 점이다. (소위 ``4세대'' 언어와 상업용 데이터베이스 질의어에서 이런 경우를 많이 볼 수 있다)
+
+조진수 번역
 
 The fetchmail control syntax seems to avoid these problems because the language domain is extremely restricted. It's nowhere near a general-purpose language; the things it says simply are not very complicated, so there's little potential for confusion in moving mentally between a tiny subset of English and the actual control language. I think there may be a broader lesson here:
 
@@ -653,7 +656,7 @@ All .fetchmailrc password encryption would have done is give a false sense of se
 
 17. A security system is only as secure as its secret. Beware of pseudo-secrets.
 
-17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets)
+17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets) (이유진)
 
 ## Necessary Preconditions for the Bazaar Style
 
