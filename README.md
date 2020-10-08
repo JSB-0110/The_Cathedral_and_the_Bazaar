@@ -13,7 +13,7 @@ Permission is granted to copy, distribute and/or modify this document under the 
 $Date: 2020/10/08 09:02:14 $
 
 ### 문서이력 
-
+6조 201723272 안창희
 * merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 * KLDP 번역 2011/02/08 버전을 병합함
 
