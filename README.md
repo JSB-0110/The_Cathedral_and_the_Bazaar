@@ -1007,9 +1007,9 @@ Further, the SNAFU principle predicts in authoritarian organizations a progressi
 
 ## Bibliography
 
-I quoted several bits from Frederick P. Brooks's classic The Mythical Man-Month because, in many respects, his insights have yet to be improved upon. I heartily recommend the 25th Anniversary edition from Addison-Wesley (ISBN 0-201-83595-9), which adds his 1986 ``No Silver Bullet'' paper.
+* (황재완) I quoted several bits from Frederick P. Brooks's classic The Mythical Man-Month because, in many respects, his insights have yet to be improved upon. I heartily recommend the 25th Anniversary edition from Addison-Wesley (ISBN 0-201-83595-9), which adds his 1986 ``No Silver Bullet'' paper.
 
-The new edition is wrapped up by an invaluable 20-years-later retrospective in which Brooks forthrightly admits to the few judgements in the original text which have not stood the test of time. I first read the retrospective after the first public version of this essay was substantially complete, and was surprised to discover that Brooks attributed bazaar-like practices to Microsoft! (In fact, however, this attribution turned out to be mistaken. In 1998 we learned from the Halloween Documents that Microsoft's internal developer community is heavily balkanized, with the kind of general source access needed to support a bazaar not even truly possible.)
+* (황재완) The new edition is wrapped up by an invaluable 20-years-later retrospective in which Brooks forthrightly admits to the few judgements in the original text which have not stood the test of time. I first read the retrospective after the first public version of this essay was substantially complete, and was surprised to discover that Brooks attributed bazaar-like practices to Microsoft! (In fact, however, this attribution turned out to be mistaken. In 1998 we learned from the Halloween Documents that Microsoft's internal developer community is heavily balkanized, with the kind of general source access needed to support a bazaar not even truly possible.)
 
 (배민) Gerald M. Weinberg's The Psychology Of Computer Programming (New York, Van Nostrand Reinhold 1971) introduced the rather unfortunately-labeled concept of ``egoless programming''. While he was nowhere near the first person to realize the futility of the ``principle of command'', he was probably the first to recognize and argue the point in particular connection with software development.
 
@@ -1021,7 +1021,7 @@ Richard P. Gabriel, contemplating the Unix culture of the pre-Linux era, relucta
 
 ## 읽어볼 만한 글들
 
-프레드릭 브룩스 (Frederick P. Brooks) 의 고전인 [Man-Month 의 신화 (The Mythical Man-Month)]에서 몇몇 부분을 인용했다. 앞으로도 여러 관점에서 그의 통찰력을 발전시킬 수 있을 것이다. 애디슨-웨슬리(Addson-Wesley) 의 25주년 기념판 (ISBN 0-201-83595-9)을 추천한다.여기에는 그가 1986년에 쓴 글, ``은총알은 없다 (No Silver Bullet)''가 들어있다. 새 기념판은 매우 귀중한 20년 후의 회고를 담고 있다. 브룩스는 여기서 원문의 몇몇 판단이 시간이 흐름에 따라 옳지 않은 것으로 드러났다고 솔직하게 인정하고 있다. 나는 이 글을 대략 마무리 지은 후에 회고담을 읽어보았는데, 브룩스가 시장 스타일을 마이크로소프트에서 연유한 관습으로 생각한다는 것을 발견하고 깜짝 놀랐다!
+* (황재완) 프레드릭 브룩스 (Frederick P. Brooks) 의 고전인 [Man-Month 의 신화 (The Mythical Man-Month)]에서 몇몇 부분을 인용했다. 앞으로도 여러 관점에서 그의 통찰력을 발전시킬 수 있을 것이다. 애디슨-웨슬리(Addson-Wesley) 의 25주년 기념판 (ISBN 0-201-83595-9)을 추천한다.여기에는 그가 1986년에 쓴 글, ``은총알은 없다 (No Silver Bullet)''가 들어있다. 새 기념판은 매우 귀중한 20년 후의 회고를 담고 있다. 브룩스는 여기서 원문의 몇몇 판단이 시간이 흐름에 따라 옳지 않은 것으로 드러났다고 솔직하게 인정하고 있다. 나는 이 글을 대략 마무리 지은 후에 회고담을 읽어보았는데, 브룩스가 시장 스타일을 마이크로소프트에서 연유한 관습으로 생각한다는 것을 발견하고 깜짝 놀랐다!
 
 제랄드 M. 와인버그의 [컴퓨터 프로그래밍의 심리학 (The Psychology Of Computer Programming)] (New York, Van Nostrand Reinhold 1971) 은 비운의 개념인 ``자아를 내세우지 않는 프로그래밍'' 을 소개했다. ``명령의 원칙'' 이 무용지물이라는 것을 처음으로 깨달은 사람이 와인버그는 아니지만 그는 아마도 처음으로 그것을 인식하고 특별히 소프트웨어 개발과 관련하여 논지를 전개시킨 첫 번째 사람일 것이다.
 
