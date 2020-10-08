@@ -655,7 +655,7 @@ All .fetchmailrc password encryption would have done is give a false sense of se
 
 17. A security system is only as secure as its secret. Beware of pseudo-secrets.
 
-17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets)
+17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets) (이유진)
 
 ## Necessary Preconditions for the Bazaar Style
 
