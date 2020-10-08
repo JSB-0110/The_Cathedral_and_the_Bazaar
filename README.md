@@ -13,11 +13,9 @@ Permission is granted to copy, distribute and/or modify this document under the 
 $Date: 2020/10/08 09:02:14 $
 
 ### 문서이력 
-6조 201723272 안창희
-6조 201620940 김동윤
+
 * merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 * KLDP 번역 2011/02/08 버전을 병합함
-* 6조이상웅
 
 ### Abstract
 
@@ -383,7 +381,7 @@ This effect will be greatly amplified if the difficulty of following trace paths
 
 ## 장미가 장미다우려면
 
-Having studied Linus's behavior and formed a theory about why it was successful, I made a conscious decision to test this theory on my new (admittedly much less complex and ambitious) project.
+Having studied Linus's behavior and formed a theory about why it was successful, I made a conscious decision to test this theory on my new (admittedly much less complex and ambitious) project.(김동윤)
 
 리누스의 행동을 연구하고 그것이 왜 성공적이었는지에 대한 이론을 만든 후, 나는 이 이론을 내 새로운 프로젝트 (물론 훨씬 덜 복잡하고 덜 야심적인 프로젝트) 에 적용해 보기로 했다.
 
