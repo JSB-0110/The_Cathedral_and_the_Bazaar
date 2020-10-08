@@ -440,6 +440,8 @@ fetchmail 의 성공을 재는 재미있는 척도 중 하나는 프로젝트 �
 Actually, when I revised in late May 1997 I found the list was beginning to lose members from its high of close to 300 for an interesting reason. Several people have asked me to unsubscribe them because fetchmail is working so well for them that they no longer need to see the list traffic! Perhaps this is part of the normal life-cycle of a mature bazaar-style project.
 
 1997 년 5월말 경에 글을 수정하면서 보니까 목록은 300명 가까이 되었고, 멤버들이 조금씩 줄기 시작했는데 그 이유가 흥미로왔다. 몇몇 사람들이 구독을 중단하면서 fetchmail 이 잘 작동하기 때문에 더 이상 메일링리스트를 보고 있을 이유가 없다고 말했다. 아마 이것이 성숙한 시장 스타일의 프로젝트가 가지는 정상적인 라이프사이클 중 하나일 것이다.
+(정세빈)
+
 
 ## Popclient becomes Fetchmail
 
