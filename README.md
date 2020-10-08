@@ -623,6 +623,7 @@ Traditionally programmers have tended to favor control syntaxes that are very pr
 
 전통적인 프로그래머들은 정확하고 짧으며 중복을 허용하지 않는 제어구문을 선호하는 경향이 있다. 이것은 컴퓨팅 자원이 비싸서 파싱하는 단계가 최대한 싸고 간단해야 했을 때부터 내려온 문화적 유산이다. 영어는 대략 50% 정도의 중복을 허용하므로 대단히 부적절한 모델인 것으로 보인다.
 
+(김범조)
 This is not my reason for normally avoiding English-like syntaxes; I mention it here only to demolish it. With cheap cycles and core, terseness should not be an end in itself. Nowadays it's more important for a language to be convenient for humans than to be cheap for the computer.
 
 이것이 내가 영어와 비슷한 구문을 일반적으로 피하는 이유는 아니다. 이 문제를 언급한 이유는 그런 관습을 없애기 위해서다. 사이클과 코어의 값이 싸졌는데도 간명함은 저절로 없어지지는 않았다. 최근에는 언어가 컴퓨터의 관점에서 싼 가격이라는 점보다는 사람에게 편리한가 하는 점이 더 중요하다.
