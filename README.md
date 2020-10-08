@@ -739,7 +739,7 @@ Gerald Weinberg's classic The Psychology of Computer Programming supplied what, 
 
 나중에 제랄드 와인버그의 고전인 ``컴퓨터 프로그래밍의 심리학 (The Psychology Of Computer Programming)'' 에서 브룩스의 말에 대한 중요한 수정사항이 제시되었다는 것을 알 수 있다. ``자아를 내세우지 않는 프로그래밍(egoless programming)'' 에 대한 논의에서 와인버그는 개발자들이 자신의 코드에 대해서 텃세를 부리지 않고 다른 사람들로 하여금 버그를 찾고 개선가능성을 찾아내도록 격려하는 곳에서는 다른 어느 곳에서보다 극적으로 빠른 개선이 일어난다고 이야기했다.
 
-Weinberg's choice of terminology has perhaps prevented his analysis from gaining the acceptance it deserved—one has to smile at the thought of describing Internet hackers as ``egoless''. But I think his argument looks more compelling today than ever.
+(박진형) Weinberg's choice of terminology has perhaps prevented his analysis from gaining the acceptance it deserved—one has to smile at the thought of describing Internet hackers as ``egoless''. But I think his argument looks more compelling today than ever.
 
 아마도 와인버그의 분석이 적절한 평가를 받지 못했던 것은 용어선택의 문제 때문이었을 것이다 -- 인터넷의 해커들이 ``자아를 내세우지 않는다'' 고 묘사하는 것에는 웃음을 지을 수밖에 없다. 하지만 나는 그의 주장이 지금 그 어느때보다 절실하다고 생각한다.
 
