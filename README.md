@@ -795,6 +795,8 @@ Many people (especially those who politically distrust free markets) would expec
 
 많은 사람들이 (특히 자유시장을 정치적으로 믿지 않는 사람들) 스스로에게 방향이 맞추어진 이기주의자들의 문화가 파편화되어 있으며 텃세가 심하고 소모적이면서, 비밀이 많고 적대적일 것이라고 생각한다. 하지만 이런 기대는 (예를 하나만 들자면) 리눅스 문서의 놀랄만한 다양성과 질, 깊이에 의해 산산이 부서지고 만다. 프로그래머들이 문서작업을 끔직하게 싫어한다는 것은 모두가 기정사실로 받아들이고 있다. 그렇다면 대체, 리눅스 해커들이 문서를 그렇게 많이 만들어냈다는 것은 어떻게 설명할 것인가? 분명히 리눅스의 자아상승을 위한 자유시장은 막대한 자금이 들어간 상업용 소프트웨어 프로듀서들의 문서작업보다 다른 사람을 위한 고결한 행동을 더 잘 해낸 것이다. (이현진)
 
+최정민
+
 Both the fetchmail and Linux kernel projects show that by properly rewarding the egos of many other hackers, a strong developer/coordinator can use the Internet to capture the benefits of having lots of co-developers without having a project collapse into a chaotic mess. So to Brooks's Law I counter-propose the following:
 
 fetchmail 과 리눅스 커널 프로젝트는 둘 다 많은 해커들의 자아를 적절히 보상해 줌으로써 강력한 개발자/조정자가 인터넷을 이용하여 많은 수의 공동개발자를 가지는 이익을 얻으면서 프로젝트가 혼돈스럽게 스스로 붕괴하는 것을 막을 수 있다는 것을 보여준다. 브룩스의 법칙에 대해서 나는 다음과 같은 반대제안을 한다.
