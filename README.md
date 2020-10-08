@@ -16,7 +16,6 @@ $Date: 2020/10/08 09:02:14 $
 
 * merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 * KLDP 번역 2011/02/08 버전을 병합함
-* 6조이상웅
 
 ### Abstract
 
@@ -402,7 +401,7 @@ For the first month or so, then, I was simply following out the implications of 
 
 9. 자료구조를 훌륭하게 만들고 코드를 멍청하게 만드는 것이 그 반대의 경우보다 훨씬 잘 작동한다. (Smart data structures and dumb code works a lot better than the other way around)
 
-Brooks, Chapter 9: ``Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.'' Allowing for thirty years of terminological/cultural shift, it's the same point.
+(이상웅) Brooks, Chapter 9: ``Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.'' Allowing for thirty years of terminological/cultural shift, it's the same point.
 
 브룩스의 책 9장(Chapter 9) 에 이렇게 쓰여있다. ``내게 [코드]를 보여주고 [자료구조]를 숨긴다면 나는 계속 어리둥절할 것이다. 자료구조를 보여준다면 코드는 볼 필요도 없이 뻔한 것이다.'' 사실 브룩스는 ``흐름도'' 와 ``테이블''이라고 이야기했다. 하지만 30년간 변해온 용어들과 문화를 고려한다면 거의 똑같은 말이라고 할 수 있다.
 
