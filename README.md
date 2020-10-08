@@ -14,8 +14,8 @@ $Date: 2020/10/08 09:02:14 $
 
 ### 문서이력 
 
-* merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
-* KLDP 번역 2011/02/08 버전을 병합함
+* (이환용) merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
+* KLDP 번역 2011/02/08 버전을 병합함 
 
 ### Abstract
 
