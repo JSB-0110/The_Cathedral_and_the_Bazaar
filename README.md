@@ -615,8 +615,8 @@ The rc (control) file syntax includes optional `noise' keywords that are entirel
 
 These started out as a late-night experiment when I noticed how much the rc file declarations were beginning to resemble an imperative minilanguage. (This is also why I changed the original popclient ``server'' keyword to ``poll'').
 
-명령형 소언어를 더 영어처럼 만들면 사용하기 쉬울 것으로 보였다. 지금은 내가 비록 Emacs 나 HTML, 그리고 많은 데이터베이스 엔진에서 볼 수 있듯이 설계를 할 때 ``언어처럼 만드는'' 파의 일원이긴 하지만 ``영어와 비슷한'' 구분을 가지는 것에 대해서는 그다지 달가와 하지 않는다. - 오동재
-
+명령형 소언어를 더 영어처럼 만들면 사용하기 쉬울 것으로 보였다. 지금은 내가 비록 Emacs 나 HTML, 그리고 많은 데이터베이스 엔진에서 볼 수 있듯이 설계를 할 때 ``언어처럼 만드는'' 파의 일원이긴 하지만 ``영어와 비슷한'' 구분을 가지는 것에 대해서는 그다지 달가와 하지 않는다.
+(박주희)
 It seemed to me that trying to make that imperative minilanguage more like English might make it easier to use. Now, although I'm a convinced partisan of the ``make it a language'' school of design as exemplified by Emacs and HTML and many database engines, I am not normally a big fan of ``English-like'' syntaxes.
 
 Traditionally programmers have tended to favor control syntaxes that are very precise and compact and have no redundancy at all. This is a cultural legacy from when computing resources were expensive, so parsing stages had to be as cheap and simple as possible. English, with about 50% redundancy, looked like a very inappropriate model then.
