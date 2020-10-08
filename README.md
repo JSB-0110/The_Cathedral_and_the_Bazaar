@@ -394,7 +394,9 @@ I had another purpose for rewriting besides improving the code and the data stru
 
 그리고 코드와 자료구조를 개선하는 것 말고도 나는 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무엇인가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 책임을 맡는 것은 괴로운 일이다.
 
+**6조 안창희(201723272)**
 For the first month or so, then, I was simply following out the implications of Carl's basic design. The first serious change I made was to add IMAP support. I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
+*************************
 
 처음 한달 정도가 지날 동안 나는 그저 칼의 기본적인 설계가 어떤 의미를 가지고 있는지 따라다니기만 했다. 내가 처음으로 중요한 수정을 가한 것은 IMAP 지원이었다. 프로토콜 머신을 일반적인 드라이버와 세가지 메소드 테이블 (POP2, POP3, IMAP을 지원하는)로 재조직했다. 이것과 그 이전의 변경들은 프로그래머들이 기억해 둘만한 일반적인 원리를 보여준다. 특히 C 와 같이 즉흥적으로 프로그램하기 힘든 언어에서는.
 
