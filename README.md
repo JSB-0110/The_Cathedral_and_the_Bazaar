@@ -719,7 +719,7 @@ It is not a coincidence that Linus is a nice guy who makes people like him and w
 
 ## 오픈 소스 소프트웨어의 사회적 문맥
 
-It is truly written: the best hacks start out as personal solutions to the author's everyday problems, and spread because the problem turns out to be typical for a large class of users. This takes us back to the matter of rule 1, restated in a perhaps more useful way:
+(KimSumin)It is truly written: the best hacks start out as personal solutions to the author's everyday problems, and spread because the problem turns out to be typical for a large class of users. This takes us back to the matter of rule 1, restated in a perhaps more useful way:
 
 다음과 같은 말이 있다. 가장 뛰어난 해킹은 해커의 일상적인 문제를 푸는 개인적인 해결책으로 시작한다. 그리고 그 문제가 많은 사용자들에게 전형적이라는 것이 밝혀지면 널리 퍼지게 된다. 첫번째 법칙으로 되돌아와 (아마도) 더 유용한 방식으로 다시 말해보자.
 
@@ -739,7 +739,7 @@ Gerald Weinberg's classic The Psychology of Computer Programming supplied what, 
 
 나중에 제랄드 와인버그의 고전인 ``컴퓨터 프로그래밍의 심리학 (The Psychology Of Computer Programming)'' 에서 브룩스의 말에 대한 중요한 수정사항이 제시되었다는 것을 알 수 있다. ``자아를 내세우지 않는 프로그래밍(egoless programming)'' 에 대한 논의에서 와인버그는 개발자들이 자신의 코드에 대해서 텃세를 부리지 않고 다른 사람들로 하여금 버그를 찾고 개선가능성을 찾아내도록 격려하는 곳에서는 다른 어느 곳에서보다 극적으로 빠른 개선이 일어난다고 이야기했다.
 
-Weinberg's choice of terminology has perhaps prevented his analysis from gaining the acceptance it deserved—one has to smile at the thought of describing Internet hackers as ``egoless''. But I think his argument looks more compelling today than ever.
+(박진형) Weinberg's choice of terminology has perhaps prevented his analysis from gaining the acceptance it deserved—one has to smile at the thought of describing Internet hackers as ``egoless''. But I think his argument looks more compelling today than ever.
 
 아마도 와인버그의 분석이 적절한 평가를 받지 못했던 것은 용어선택의 문제 때문이었을 것이다 -- 인터넷의 해커들이 ``자아를 내세우지 않는다'' 고 묘사하는 것에는 웃음을 지을 수밖에 없다. 하지만 나는 그의 주장이 지금 그 어느때보다 절실하다고 생각한다.
 
@@ -757,7 +757,7 @@ Before cheap Internet, there were some geographically compact communities where 
 
 싼 가격에 인터넷을 이용할 수 있게 되기 전에는 지리적으로 좁은 지역에서 공동체가 자리잡고 있었고, 그 공동체의 문화는 와인버그의 ``자아를 내세우지 않는'' 프로그래밍이 장려되었으며 개발자들은 쉽게 많은 사람들, 숙련된 훈수꾼들과 공동개발자들을 끌어들일 수 있었다. 벨 연구소, MIT 인공지능 연구소, UC 버클리 -- 이곳이 바로 전설적인 혁신들이 일어난 곳이고, 여전히 그런 잠재력을 가지고 있는 곳이다.
 
-Linux was the first project for which a conscious and successful effort to use the entire world as its talent pool was made. I don't think it's a coincidence that the gestation period of Linux coincided with the birth of the World Wide Web, and that Linux left its infancy during the same period in 1993–1994 that saw the takeoff of the ISP industry and the explosion of mainstream interest in the Internet. Linus was the first person who learned how to play by the new rules that pervasive Internet access made possible.
+(유건)Linux was the first project for which a conscious and successful effort to use the entire world as its talent pool was made. I don't think it's a coincidence that the gestation period of Linux coincided with the birth of the World Wide Web, and that Linux left its infancy during the same period in 1993–1994 that saw the takeoff of the ISP industry and the explosion of mainstream interest in the Internet. Linus was the first person who learned how to play by the new rules that pervasive Internet access made possible.
 
 리눅스는 재능을 끌어올 풀(pool) 로 전세계를 사용하기 위해 의식적으로, 또 성공적으로 노력한 최초의 프로젝트였다. 나는 리눅스의 태동기가 월드와이드 웹의 탄생과 일치하는 것을, 그리고 리눅스가 유아기를 벗어나던 1993-1994년 경에 ISP 산업과 인터넷에 주류의 관심이 폭발하기 시작했던 것을 우연이라고 생각하지 않는다. 리누스는 급속히 보급되는 인터넷을 가능하게 했던 그 규칙에 따라 어떻게 일을 진행해야 하는지 알았던 최초의 사람이다.
 
@@ -777,23 +777,25 @@ The ``severe effort of many converging wills'' is precisely what a project like 
 
 Earlier I referred to the ``Delphi effect'' as a possible explanation for Linus's Law. But more powerful analogies to adaptive systems in biology and economics also irresistably suggest themselves. The Linux world behaves in many respects like a free market or an ecology, a collection of selfish agents attempting to maximize utility which in the process produces a self-correcting spontaneous order more elaborate and efficient than any amount of central planning could have achieved. Here, then, is the place to seek the ``principle of understanding''.
 
-앞에서 나는 리누스의 법칙을 설명하기 위해 ``델파이 효과''를 언급했다. 하지만 생물학과 경제학에서의 적응계에 비유하는 것이 더 강력한 비유라고 할 수 있다. 리눅스 세계는 많은 점에서 생태계나 자유시장과 같이 행동한다. 일단의 이기적인 에이전트들이 효용을 극대화시키기 위해 애쓰는 과정을 통해 스스로를 수정하는 자율적인 질서를 만들어 내며 이것은 중앙통제가 이룰 수 있는 어떤 결과보다 더 정교하고 효율적이다. 그렇다면 여기에서 ``이해의 원리''를 찾아낼 수 있다.
+앞에서 나는 리누스의 법칙을 설명하기 위해 ``델파이 효과''를 언급했다. 하지만 생물학과 경제학에서의 적응계에 비유하는 것이 더 강력한 비유라고 할 수 있다. 리눅스 세계는 많은 점에서 생태계나 자유시장과 같이 행동한다. 일단의 이기적인 에이전트들이 효용을 극대화시키기 위해 애쓰는 과정을 통해 스스로를 수정하는 자율적인 질서를 만들어 내며 이것은 중앙통제가 이룰 수 있는 어떤 결과보다 더 정교하고 효율적이다. 그렇다면 여기에서 ``이해의 원리''를 찾아낼 수 있다. (이현진)
 
 The ``utility function'' Linux hackers are maximizing is not classically economic, but is the intangible of their own ego satisfaction and reputation among other hackers. (One may call their motivation ``altruistic'', but this ignores the fact that altruism is itself a form of ego satisfaction for the altruist). Voluntary cultures that work this way are not actually uncommon; one other in which I have long participated is science fiction fandom, which unlike hackerdom has long explicitly recognized ``egoboo'' (ego-boosting, or the enhancement of one's reputation among other fans) as the basic drive behind volunteer activity.
 
-리눅스의 해커들이 최대화하려고 하는 ``효용함수'' 는 고전적인 의미에서의 경제적인 것은 아니고 그들 자신의 측정할 수 없는 자아 만족과 다른 해커들 사이의 평판이다. (이런 동기를 ``이타적'' 이라고 말할 지도 모르겠지만 그렇게 말하는 것은 이타주의 그 자체가 이타주의자의 자아를 만족시키는 한 형태라는 사실을 무시하는 것이다) 이런 방식으로 일을 처리하는 자발적인 문화는 사실 그렇게 찾아보기 힘든 것은 아니다. 내가 오랫동안 참여해왔던 또 하나의 문화는 과학소설 팬들의 세계(science fiction fandom) 이다. 해커들의 세계와 다르지 않게 여기에서는 ``자아상승'' (다른 팬들 사이에서 자신의 평판이 높아지는 것) 이 자발적인 활동 뒤의 기본적인 동기라고 분명하게 인식한다.
+리눅스의 해커들이 최대화하려고 하는 ``효용함수'' 는 고전적인 의미에서의 경제적인 것은 아니고 그들 자신의 측정할 수 없는 자아 만족과 다른 해커들 사이의 평판이다. (이런 동기를 ``이타적'' 이라고 말할 지도 모르겠지만 그렇게 말하는 것은 이타주의 그 자체가 이타주의자의 자아를 만족시키는 한 형태라는 사실을 무시하는 것이다) 이런 방식으로 일을 처리하는 자발적인 문화는 사실 그렇게 찾아보기 힘든 것은 아니다. 내가 오랫동안 참여해왔던 또 하나의 문화는 과학소설 팬들의 세계(science fiction fandom) 이다. 해커들의 세계와 다르지 않게 여기에서는 ``자아상승'' (다른 팬들 사이에서 자신의 평판이 높아지는 것) 이 자발적인 활동 뒤의 기본적인 동기라고 분명하게 인식한다. (이현진)
 
 Linus, by successfully positioning himself as the gatekeeper of a project in which the development is mostly done by others, and nurturing interest in the project until it became self-sustaining, has shown an acute grasp of Kropotkin's ``principle of shared understanding''. This quasi-economic view of the Linux world enables us to see how that understanding is applied.
 
-리누스는 자신을 개발은 대부분 다른 사람들에 의해 이루어지는 프로젝트의 수문장으로 위치시키는데 성공했고, 프로젝트가 스스로 유지할 수 있게 될 때까지 계속해서 흥미거리를 공급해 줌으로써 크로포트킨의 ``공유이해의 원리''의 의미를 정확하게 따랐다. 준-경제학적인 관점에서 리눅스 세계를 보면 어떻게 이해가 적용되었는지를 알 수 있다.
+리누스는 자신을 개발은 대부분 다른 사람들에 의해 이루어지는 프로젝트의 수문장으로 위치시키는데 성공했고, 프로젝트가 스스로 유지할 수 있게 될 때까지 계속해서 흥미거리를 공급해 줌으로써 크로포트킨의 ``공유이해의 원리''의 의미를 정확하게 따랐다. 준-경제학적인 관점에서 리눅스 세계를 보면 어떻게 이해가 적용되었는지를 알 수 있다. (이현진)
 
 We may view Linus's method as a way to create an efficient market in ``egoboo''—to connect the selfishness of individual hackers as firmly as possible to difficult ends that can only be achieved by sustained cooperation. With the fetchmail project I have shown (albeit on a smaller scale) that his methods can be duplicated with good results. Perhaps I have even done it a bit more consciously and systematically than he.
 
-리누스의 방법을 ``자아 상승'' 에 있어서 효과적인 시장을 만드는 길로 볼 수 있다 -- 개개인인 해커들의 이기심을 최대한 단단하게 지속적인 협동으로만 이룩할 수 있는 어려운 목적과 연결시키는 것이다. fetchmail 프로젝트에서 나는 (더 작은 규모였지만) 이 방법을 그대로 따라했고 좋은 결과를 냈다. 아마도 내가 리누스보다 더 의식적이고 체계적으로 일을 해냈을 것이다.
+리누스의 방법을 ``자아 상승'' 에 있어서 효과적인 시장을 만드는 길로 볼 수 있다 -- 개개인인 해커들의 이기심을 최대한 단단하게 지속적인 협동으로만 이룩할 수 있는 어려운 목적과 연결시키는 것이다. fetchmail 프로젝트에서 나는 (더 작은 규모였지만) 이 방법을 그대로 따라했고 좋은 결과를 냈다. 아마도 내가 리누스보다 더 의식적이고 체계적으로 일을 해냈을 것이다. (이현진)
 
 Many people (especially those who politically distrust free markets) would expect a culture of self-directed egoists to be fragmented, territorial, wasteful, secretive, and hostile. But this expectation is clearly falsified by (to give just one example) the stunning variety, quality, and depth of Linux documentation. It is a hallowed given that programmers hate documenting; how is it, then, that Linux hackers generate so much documentation? Evidently Linux's free market in egoboo works better to produce virtuous, other-directed behavior than the massively-funded documentation shops of commercial software producers.
 
-많은 사람들이 (특히 자유시장을 정치적으로 믿지 않는 사람들) 스스로에게 방향이 맞추어진 이기주의자들의 문화가 파편화되어 있으며 텃세가 심하고 소모적이면서, 비밀이 많고 적대적일 것이라고 생각한다. 하지만 이런 기대는 (예를 하나만 들자면) 리눅스 문서의 놀랄만한 다양성과 질, 깊이에 의해 산산이 부서지고 만다. 프로그래머들이 문서작업을 끔직하게 싫어한다는 것은 모두가 기정사실로 받아들이고 있다. 그렇다면 대체, 리눅스 해커들이 문서를 그렇게 많이 만들어냈다는 것은 어떻게 설명할 것인가? 분명히 리눅스의 자아상승을 위한 자유시장은 막대한 자금이 들어간 상업용 소프트웨어 프로듀서들의 문서작업보다 다른 사람을 위한 고결한 행동을 더 잘 해낸 것이다.
+많은 사람들이 (특히 자유시장을 정치적으로 믿지 않는 사람들) 스스로에게 방향이 맞추어진 이기주의자들의 문화가 파편화되어 있으며 텃세가 심하고 소모적이면서, 비밀이 많고 적대적일 것이라고 생각한다. 하지만 이런 기대는 (예를 하나만 들자면) 리눅스 문서의 놀랄만한 다양성과 질, 깊이에 의해 산산이 부서지고 만다. 프로그래머들이 문서작업을 끔직하게 싫어한다는 것은 모두가 기정사실로 받아들이고 있다. 그렇다면 대체, 리눅스 해커들이 문서를 그렇게 많이 만들어냈다는 것은 어떻게 설명할 것인가? 분명히 리눅스의 자아상승을 위한 자유시장은 막대한 자금이 들어간 상업용 소프트웨어 프로듀서들의 문서작업보다 다른 사람을 위한 고결한 행동을 더 잘 해낸 것이다. (이현진)
+
+최정민
 
 Both the fetchmail and Linux kernel projects show that by properly rewarding the egos of many other hackers, a strong developer/coordinator can use the Internet to capture the benefits of having lots of co-developers without having a project collapse into a chaotic mess. So to Brooks's Law I counter-propose the following:
 
