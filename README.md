@@ -631,6 +631,8 @@ There remain, however, good reasons to be wary. One is the complexity cost of th
 
 물론 조심해야 할 이유는 충분히 있다. 한 가지는 파싱하는 단계의 복잡성에 대한 비용이다 -- 파싱하는 단계를 버그가 우글거리는 데다가 사용자로 하여금 그 자체만으로 혼란을 일으키게 만들고 싶지는 않을 것이다. 또 하나의 이유는 언어의 구문을 영어와 비슷하게 만들려고 노력하면 그 ``영어'' 가 심각하게 왜곡되어 자연어와의 피상적인 유사점이 전통적인 구문만큼이나 혼란스럽게 되는 경우가 많다는 점이다. (소위 ``4세대'' 언어와 상업용 데이터베이스 질의어에서 이런 경우를 많이 볼 수 있다)
 
+조진수 번역
+
 The fetchmail control syntax seems to avoid these problems because the language domain is extremely restricted. It's nowhere near a general-purpose language; the things it says simply are not very complicated, so there's little potential for confusion in moving mentally between a tiny subset of English and the actual control language. I think there may be a broader lesson here:
 
 fetchmail 제어구문은 이런 문제를 피하려고 했다. 언어의 영역이 매우 제한되어 있었기 때문이다. 일반적인 목적의 언어와는 거리가 멀었다. 언어가 표현하는 것이 별로 복잡하지 않았기 때문에 영어의 일부분에서 실제 제어언어로 옮겨가는데 혼란을 일으킬 가능성이 적었다. 더 넓은 의미의 교훈을 여기에서 얻었다.
