@@ -427,12 +427,13 @@ fetchmail 이 어떻게 SMTP 포트로 가져온 메일을 포워드 시켜야 �
 
 (정세빈) The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
 
-이 단순한 방법들은 즉각 효력을 나타냈다. 프로젝트를 시작할 때부터 개발자들이라면 학수고대할 만한 버그 리포트를, 때로는 훌륭하게 수정된 코드를 받을 수 있었다. 사려깊은 비판과 팬 메일, 기능제안들을 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있다.
+이 단순한 방법들에 의한 효과는 즉각적이었다. 나는 프로젝트 시작부터 대부분의 개발자라면 죽일 만큼 갖고 싶어 할 품질의 버그 리포트를 받았는데, 때로는 훌륭한 수정이 붙어있기도 하였다. 나는 사려 깊은 비판과 팬 메일, 지능적인 기능 제안들 또한 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있었다.
 
-10. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
+10\. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
 
-10. 베타테스터들을 가장 중요한 자원으로 여긴다면 그들은 정말 가장 중요한 자원이 되어준다. (If you treat your beta-testers as if the're your most valuable resource, they will respond by becoming your most valuable resource)
+10\. 네가 베타테스터들을 너의 가장 중요한 자원인 것처럼 취급한다면, 그들은 너에게 가장 중요한 자원이 되는 것으로 응답할 것이다.
 
+--
 One interesting measure of fetchmail's success is the sheer size of the project beta list, fetchmail-friends. At the time of latest revision of this paper (November 2000) it has 287 members and is adding two or three a week.
 
 fetchmail 의 성공을 재는 재미있는 척도 중 하나는 프로젝트 베타테스터 메일링리스트인 fetchmail-friends 의 크기이다. 이 글을 쓰고있을 때 목록에는 249 명이 있었고 1주일에 2~3명이 추가되었다.
