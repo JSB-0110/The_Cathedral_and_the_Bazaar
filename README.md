@@ -388,11 +388,11 @@ Having studied Linus's behavior and formed a theory about why it was successful,
 
 But the first thing I did was reorganize and simplify popclient a lot. Carl Harris's implementation was very sound, but exhibited a kind of unnecessary complexity common to many C programmers. He treated the code as central and the data structures as support for the code. As a result, the code was beautiful but the data structure design ad-hoc and rather ugly (at least by the high standards of this veteran LISP hacker).
 
-그러나 내가 가장 먼저 한 일은 popclient 를 더 재조직화하고 단순화한 것이었다. 칼 해리스 (Carl Harris) 의 구현방식은 매우 건강한 것이었지만 많은 C 프로그래머들에게서 볼 수 있었던 것처럼 일종의 불필요한 복잡성을 보여주고 있었다. 그는 코드를 중심적인 것으로, 자료구조는 코드를 받쳐주는 것으로 취급했다. 그 결과 코드는 아름답지만 자료구조는 임시변통(ad-hoc)으로 설계되었고, 보기에 좋지 않았다. (최소한 옛 LISP 해커의 높은 기준에서 보자면 말이다)
+그러나 내가 가장 먼저 한 일은 popclient 를 더 재정리하고 단순화한 것이었다. 칼 해리스 (Carl Harris) 의 구현방식은 매우 괜찮았지만 많은 C 프로그래머들에게서 볼 수 있는 일종의 불필요한 복잡성을 보여주었다. 그는 코드를 중심으로 취급하고 자료구조는 코드를 받쳐주는 것으로 사용했다. 그 결과 코드는 아름답지만 자료구조는 임시변통(ad-hoc)으로 설계되었고, 보기에 좋지 않았다. (최소한 옛 LISP 해커의 높은 기준에서 보자면 말이다)
 
 I had another purpose for rewriting besides improving the code and the data structure design, however. That was to evolve it into something I understood completely. It's no fun to be responsible for fixing bugs in a program you don't understand.
 
-그리고 코드와 자료구조를 개선하는 것 말고도 나는 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무엇인가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 책임을 맡는 것은 괴로운 일이다.
+그러나 나는 코드와 자료구조를 개선하는 것 외에 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무언가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 역할을 맡는 것은 재미가 없다.
 
 **6조 안창희(201723272)**
 For the first month or so, then, I was simply following out the implications of Carl's basic design. The first serious change I made was to add IMAP support. I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
