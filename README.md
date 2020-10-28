@@ -404,17 +404,17 @@ For the first month or so, then, I was simply following out the implications of 
 
 9. 자료구조를 훌륭하게 만들고 코드를 멍청하게 만드는 것이 그 반대의 경우보다 훨씬 잘 작동한다. (Smart data structures and dumb code works a lot better than the other way around)
 
-(이상웅) Brooks, Chapter 9: ``Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.'' Allowing for thirty years of terminological/cultural shift, it's the same point.
+Brooks, Chapter 9: **Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.** Allowing for thirty years of terminological/cultural shift, it's the same point.
 
-브룩스의 책 9장(Chapter 9) 에 이렇게 쓰여있다. ``내게 [코드]를 보여주고 [자료구조]를 숨긴다면 나는 계속 어리둥절할 것이다. 자료구조를 보여준다면 코드는 볼 필요도 없이 뻔한 것이다.'' 사실 브룩스는 ``흐름도'' 와 ``테이블''이라고 이야기했다. 하지만 30년간 변해온 용어들과 문화를 고려한다면 거의 똑같은 말이라고 할 수 있다.
+브룩스의 책 9장에 이렇게 쓰여 있다. **[자료구조]를 꽁꽁 숨긴다면, 내게 [코드]를 보여줄지언정 나는 계속 어리둥절할 것이다. 하지만 자료구조를 보여준다면, 나는 코드를 꼭 보려고 하지는 않을 것이다. 이는 명백한 사실이다.** 여기서 브룩스는 흐름도(flowchart)와 표(table)라고 표현했다. 다만 30년 동안의 용어와 문화의 변화를 고려한다면, 본질적인 의미는 같다고 할 수 있다.
 
 At this point (early September 1996, about six weeks from zero) I started thinking that a name change might be in order—after all, it wasn't just a POP client any more. But I hesitated, because there was as yet nothing genuinely new in the design. My version of popclient had yet to develop an identity of its own.
 
-이 시점에서 (1996년 9월 초, 일을 시작하고 6 주가 지난 후) 나는 이름을 바꿀 때가 되었다고 생각하기 시작했다. 이 프로그램은 더 이상 POP 클라이언트만이 아니었다. 하지만 설계상에 정말 새로운 것이 들어가 있지 않았기 때문에 머뭇거리고 있었다. 내가 만든 popclient 는 아직 스스로의 정체성을 확립하지 못하고 있었다.
+일을 시작하고 6주가 지난 1996년 9월 초쯤, 나는 프로그램의 이름을 바꿔야 하는 것이 옳다고 생각했다. 이 프로그램이 더 이상 POP 클라이언트로서의 기능만을 수행하는 것이 아니었기 때문이다. 하지만 설계상으로 정말 새롭다고 할 만한 무언가가 아직 없었기 때문에, 나는 내 판단에 대해 확신하지 못하고 망설이고 있었다. 내가 만든 popclient 는 아직 스스로의 정체성을 확립하지 못하고 있었다.
 
 That changed, radically, when popclient learned how to forward fetched mail to the SMTP port. I'll get to that in a moment. But first: I said earlier that I'd decided to use this project to test my theory about what Linus Torvalds had done right. How (you may well ask) did I do that? In these ways:
 
-fetchmail이 SMTP 포트로 가져온 메일을 어떻게 전달해야 하는지 알고 난 후에는 상황이 급변했다. 그에 대해서는 잠시 후에 이야기할 것이다. 하지만 그에 앞서, 나는 리누스 토발즈가 옳은 방법으로 일을 해냈다는 내 이론을 시험하기 위해 이 프로젝트를 수행하기로 했다고 말했다. 어떻게 시험을 했을까? 다음과 같은 방법을 사용했다.
+하지만 popclient가 가져온 메일을 어떻게 SMTP 포트로 전달해야 하는지 알고 난 후에는 상황이 급격히 바뀌었다. 이에 대해서는 잠시 후에 이야기하도록 하겠다. 그에 앞서, 나는 리누스 토발즈가 옳은 방법으로 일을 해냈다는 내 이론을 검증하기 위해 이 프로젝트를 수행하기로 했다고 말했다. 어떻게 검증했을까? 다음과 같은 방법을 사용했다.
 
 * I released early and often (almost never less often than every ten days; during periods of intense development, once a day).
 * 일찍, 자주 발표했다. (발표간격이 10일을 넘는 경우는 거의 없었으며 개발에 몰두해 있을 때는 하루에 한번씩 발표했다)
