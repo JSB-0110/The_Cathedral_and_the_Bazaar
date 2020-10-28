@@ -14,6 +14,7 @@ $Date: 2020/10/08 09:02:14 $
 
 ### 문서이력 
 
+* 6조 201723272 안창희
 * merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 * KLDP 번역 2011/02/08 버전을 병합함
 
@@ -381,19 +382,21 @@ This effect will be greatly amplified if the difficulty of following trace paths
 
 ## 장미가 장미다우려면
 
-Having studied Linus's behavior and formed a theory about why it was successful, I made a conscious decision to test this theory on my new (admittedly much less complex and ambitious) project.
+Having studied Linus's behavior and formed a theory about why it was successful, I made a conscious decision to test this theory on my new (admittedly much less complex and ambitious) project.(김동윤)
 
 리누스의 행동을 연구하고 그것이 왜 성공적이었는지에 대한 이론을 만든 후, 나는 이 이론을 내 새로운 프로젝트 (물론 훨씬 덜 복잡하고 덜 야심적인 프로젝트) 에 적용해 보기로 했다.
 
 But the first thing I did was reorganize and simplify popclient a lot. Carl Harris's implementation was very sound, but exhibited a kind of unnecessary complexity common to many C programmers. He treated the code as central and the data structures as support for the code. As a result, the code was beautiful but the data structure design ad-hoc and rather ugly (at least by the high standards of this veteran LISP hacker).
 
-그러나 내가 가장 먼저 한 일은 popclient 를 더 재조직화하고 단순화한 것이었다. 칼 해리스 (Carl Harris) 의 구현방식은 매우 건강한 것이었지만 많은 C 프로그래머들에게서 볼 수 있었던 것처럼 일종의 불필요한 복잡성을 보여주고 있었다. 그는 코드를 중심적인 것으로, 자료구조는 코드를 받쳐주는 것으로 취급했다. 그 결과 코드는 아름답지만 자료구조는 임시변통(ad-hoc)으로 설계되었고, 보기에 좋지 않았다. (최소한 옛 LISP 해커의 높은 기준에서 보자면 말이다)
+그러나 내가 가장 먼저 한 일은 popclient 를 더 재정리하고 단순화한 것이었다. 칼 해리스 (Carl Harris) 의 구현방식은 매우 괜찮았지만 많은 C 프로그래머들에게서 볼 수 있는 일종의 불필요한 복잡성을 보여주었다. 그는 코드를 중심으로 취급하고 자료구조는 코드를 받쳐주는 것으로 사용했다. 그 결과 코드는 아름답지만 자료구조는 임시변통(ad-hoc)으로 설계되었고, 보기에 좋지 않았다. (최소한 옛 LISP 해커의 높은 기준에서 보자면 말이다)
 
 I had another purpose for rewriting besides improving the code and the data structure design, however. That was to evolve it into something I understood completely. It's no fun to be responsible for fixing bugs in a program you don't understand.
 
-그리고 코드와 자료구조를 개선하는 것 말고도 나는 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무엇인가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 책임을 맡는 것은 괴로운 일이다.
+그러나 나는 코드와 자료구조를 개선하는 것 외에 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무언가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 역할을 맡는 것은 재미가 없다.
 
+**6조 안창희(201723272)**
 For the first month or so, then, I was simply following out the implications of Carl's basic design. The first serious change I made was to add IMAP support. I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
+*************************
 
 처음 한달 정도가 지날 동안 나는 그저 칼의 기본적인 설계가 어떤 의미를 가지고 있는지 따라다니기만 했다. 내가 처음으로 중요한 수정을 가한 것은 IMAP 지원이었다. 프로토콜 머신을 일반적인 드라이버와 세가지 메소드 테이블 (POP2, POP3, IMAP을 지원하는)로 재조직했다. 이것과 그 이전의 변경들은 프로그래머들이 기억해 둘만한 일반적인 원리를 보여준다. 특히 C 와 같이 즉흥적으로 프로그램하기 힘든 언어에서는. (박상혁)
 
@@ -425,21 +428,22 @@ That changed, radically, when popclient learned how to forward fetched mail to t
 * And I listened to my beta-testers, polling them about design decisions and stroking them whenever they sent in patches and feedback.
 * 그리고 그들의 이야기를 들었다. 설계 결정에 대해 투표를 하기도 했고 패치나 피드백을 보내올 때마다 베타테스터들을 구슬렀다.
 
-The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
+(정세빈) The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
 
-이 단순한 방법들은 즉각 효력을 나타냈다. 프로젝트를 시작할 때부터 개발자들이라면 학수고대할 만한 버그 리포트를, 때로는 훌륭하게 수정된 코드를 받을 수 있었다. 사려깊은 비판과 팬 메일, 기능제안들을 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있다.
+위의 단순한 방법들에 의한 효과는 즉각적으로 나타났다. 나는 프로젝트 시작부터 대부분의 개발자라면 죽일 만큼 갖고 싶어 할 품질의 버그 리포트를 받았는데, 때로는 리포트에 훌륭한 수정이 붙어있기도 하였다. 나는 사려 깊은 비판과 팬 메일, 지능적인 기능 제안들 또한 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있었다.:
 
-10. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
+10\. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
 
-10. 베타테스터들을 가장 중요한 자원으로 여긴다면 그들은 정말 가장 중요한 자원이 되어준다. (If you treat your beta-testers as if the're your most valuable resource, they will respond by becoming your most valuable resource)
+10\. 네가 베타테스터들을 너의 가장 가치 있는 자원처럼 대한다면, 그들은 너의 가장 가치 있는 자원이 되는 것으로 응답할 것이다.
 
 One interesting measure of fetchmail's success is the sheer size of the project beta list, fetchmail-friends. At the time of latest revision of this paper (November 2000) it has 287 members and is adding two or three a week.
 
-fetchmail 의 성공을 재는 재미있는 척도 중 하나는 프로젝트 베타테스터 메일링리스트인 fetchmail-friends 의 크기이다. 이 글을 쓰고있을 때 목록에는 249 명이 있었고 1주일에 2~3명이 추가되었다.
+Fetchmail의 성공에 대한 흥미로운 척도 중 하나는 프로젝트 베타테스터 목록, fetchmail-friends의 크기였다. 이 글의 최근 개정 (2000년 11월) 당시에는 287명의 회원이 속해 있었고 일주일에 2~3 명이 추가되고 있었다.
 
 Actually, when I revised in late May 1997 I found the list was beginning to lose members from its high of close to 300 for an interesting reason. Several people have asked me to unsubscribe them because fetchmail is working so well for them that they no longer need to see the list traffic! Perhaps this is part of the normal life-cycle of a mature bazaar-style project.
 
-1997 년 5월말 경에 글을 수정하면서 보니까 목록은 300명 가까이 되었고, 멤버들이 조금씩 줄기 시작했는데 그 이유가 흥미로왔다. 몇몇 사람들이 구독을 중단하면서 fetchmail 이 잘 작동하기 때문에 더 이상 메일링리스트를 보고 있을 이유가 없다고 말했다. 아마 이것이 성숙한 시장 스타일의 프로젝트가 가지는 정상적인 라이프사이클 중 하나일 것이다.
+사실, 1997년 5월 말 경에 글을 수정했을 때, 나는 이 목록이 흥미로운 이유로 300명에 가까웠던 최고점에서 회원을 잃기 시작했다는 것을 발견하였다. 몇몇 사람들이 fetchmail이 잘 작동하기 때문에 더 이상 메일링리스트를 볼 필요가 없다며 나에게 구독 취소를 요청한 것이다! 아마 이것이 성숙한 바자-스타일(bazaar-style) 프로젝트가 가지는 정상적인 수명 주기의 일부일 것이다.
+
 
 ## Popclient becomes Fetchmail
 
@@ -616,13 +620,14 @@ The rc (control) file syntax includes optional `noise' keywords that are entirel
 These started out as a late-night experiment when I noticed how much the rc file declarations were beginning to resemble an imperative minilanguage. (This is also why I changed the original popclient ``server'' keyword to ``poll'').
 
 명령형 소언어를 더 영어처럼 만들면 사용하기 쉬울 것으로 보였다. 지금은 내가 비록 Emacs 나 HTML, 그리고 많은 데이터베이스 엔진에서 볼 수 있듯이 설계를 할 때 ``언어처럼 만드는'' 파의 일원이긴 하지만 ``영어와 비슷한'' 구분을 가지는 것에 대해서는 그다지 달가와 하지 않는다.
-
+(박주희)
 It seemed to me that trying to make that imperative minilanguage more like English might make it easier to use. Now, although I'm a convinced partisan of the ``make it a language'' school of design as exemplified by Emacs and HTML and many database engines, I am not normally a big fan of ``English-like'' syntaxes.
 
 Traditionally programmers have tended to favor control syntaxes that are very precise and compact and have no redundancy at all. This is a cultural legacy from when computing resources were expensive, so parsing stages had to be as cheap and simple as possible. English, with about 50% redundancy, looked like a very inappropriate model then.
 
 전통적인 프로그래머들은 정확하고 짧으며 중복을 허용하지 않는 제어구문을 선호하는 경향이 있다. 이것은 컴퓨팅 자원이 비싸서 파싱하는 단계가 최대한 싸고 간단해야 했을 때부터 내려온 문화적 유산이다. 영어는 대략 50% 정도의 중복을 허용하므로 대단히 부적절한 모델인 것으로 보인다.
 
+(김범조)
 This is not my reason for normally avoiding English-like syntaxes; I mention it here only to demolish it. With cheap cycles and core, terseness should not be an end in itself. Nowadays it's more important for a language to be convenient for humans than to be cheap for the computer.
 
 이것이 내가 영어와 비슷한 구문을 일반적으로 피하는 이유는 아니다. 이 문제를 언급한 이유는 그런 관습을 없애기 위해서다. 사이클과 코어의 값이 싸졌는데도 간명함은 저절로 없어지지는 않았다. 최근에는 언어가 컴퓨터의 관점에서 싼 가격이라는 점보다는 사람에게 편리한가 하는 점이 더 중요하다.
@@ -630,6 +635,8 @@ This is not my reason for normally avoiding English-like syntaxes; I mention it 
 There remain, however, good reasons to be wary. One is the complexity cost of the parsing stage—you don't want to raise that to the point where it's a significant source of bugs and user confusion in itself. Another is that trying to make a language syntax English-like often demands that the ``English'' it speaks be bent seriously out of shape, so much so that the superficial resemblance to natural language is as confusing as a traditional syntax would have been. (You see this bad effect in a lot of so-called ``fourth generation'' and commercial database-query languages.)
 
 물론 조심해야 할 이유는 충분히 있다. 한 가지는 파싱하는 단계의 복잡성에 대한 비용이다 -- 파싱하는 단계를 버그가 우글거리는 데다가 사용자로 하여금 그 자체만으로 혼란을 일으키게 만들고 싶지는 않을 것이다. 또 하나의 이유는 언어의 구문을 영어와 비슷하게 만들려고 노력하면 그 ``영어'' 가 심각하게 왜곡되어 자연어와의 피상적인 유사점이 전통적인 구문만큼이나 혼란스럽게 되는 경우가 많다는 점이다. (소위 ``4세대'' 언어와 상업용 데이터베이스 질의어에서 이런 경우를 많이 볼 수 있다)
+
+조진수 번역
 
 The fetchmail control syntax seems to avoid these problems because the language domain is extremely restricted. It's nowhere near a general-purpose language; the things it says simply are not very complicated, so there's little potential for confusion in moving mentally between a tiny subset of English and the actual control language. I think there may be a broader lesson here:
 
@@ -653,7 +660,7 @@ All .fetchmailrc password encryption would have done is give a false sense of se
 
 17. A security system is only as secure as its secret. Beware of pseudo-secrets.
 
-17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets)
+17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets) (이유진)
 
 ## Necessary Preconditions for the Bazaar Style
 
@@ -719,7 +726,7 @@ It is not a coincidence that Linus is a nice guy who makes people like him and w
 
 ## 오픈 소스 소프트웨어의 사회적 문맥
 
-It is truly written: the best hacks start out as personal solutions to the author's everyday problems, and spread because the problem turns out to be typical for a large class of users. This takes us back to the matter of rule 1, restated in a perhaps more useful way:
+(KimSumin)It is truly written: the best hacks start out as personal solutions to the author's everyday problems, and spread because the problem turns out to be typical for a large class of users. This takes us back to the matter of rule 1, restated in a perhaps more useful way:
 
 다음과 같은 말이 있다. 가장 뛰어난 해킹은 해커의 일상적인 문제를 푸는 개인적인 해결책으로 시작한다. 그리고 그 문제가 많은 사용자들에게 전형적이라는 것이 밝혀지면 널리 퍼지게 된다. 첫번째 법칙으로 되돌아와 (아마도) 더 유용한 방식으로 다시 말해보자.
 
@@ -739,7 +746,7 @@ Gerald Weinberg's classic The Psychology of Computer Programming supplied what, 
 
 나중에 제랄드 와인버그의 고전인 ``컴퓨터 프로그래밍의 심리학 (The Psychology Of Computer Programming)'' 에서 브룩스의 말에 대한 중요한 수정사항이 제시되었다는 것을 알 수 있다. ``자아를 내세우지 않는 프로그래밍(egoless programming)'' 에 대한 논의에서 와인버그는 개발자들이 자신의 코드에 대해서 텃세를 부리지 않고 다른 사람들로 하여금 버그를 찾고 개선가능성을 찾아내도록 격려하는 곳에서는 다른 어느 곳에서보다 극적으로 빠른 개선이 일어난다고 이야기했다.
 
-Weinberg's choice of terminology has perhaps prevented his analysis from gaining the acceptance it deserved—one has to smile at the thought of describing Internet hackers as ``egoless''. But I think his argument looks more compelling today than ever.
+(박진형) Weinberg's choice of terminology has perhaps prevented his analysis from gaining the acceptance it deserved—one has to smile at the thought of describing Internet hackers as ``egoless''. But I think his argument looks more compelling today than ever.
 
 아마도 와인버그의 분석이 적절한 평가를 받지 못했던 것은 용어선택의 문제 때문이었을 것이다 -- 인터넷의 해커들이 ``자아를 내세우지 않는다'' 고 묘사하는 것에는 웃음을 지을 수밖에 없다. 하지만 나는 그의 주장이 지금 그 어느때보다 절실하다고 생각한다.
 
@@ -757,7 +764,7 @@ Before cheap Internet, there were some geographically compact communities where 
 
 싼 가격에 인터넷을 이용할 수 있게 되기 전에는 지리적으로 좁은 지역에서 공동체가 자리잡고 있었고, 그 공동체의 문화는 와인버그의 ``자아를 내세우지 않는'' 프로그래밍이 장려되었으며 개발자들은 쉽게 많은 사람들, 숙련된 훈수꾼들과 공동개발자들을 끌어들일 수 있었다. 벨 연구소, MIT 인공지능 연구소, UC 버클리 -- 이곳이 바로 전설적인 혁신들이 일어난 곳이고, 여전히 그런 잠재력을 가지고 있는 곳이다.
 
-Linux was the first project for which a conscious and successful effort to use the entire world as its talent pool was made. I don't think it's a coincidence that the gestation period of Linux coincided with the birth of the World Wide Web, and that Linux left its infancy during the same period in 1993–1994 that saw the takeoff of the ISP industry and the explosion of mainstream interest in the Internet. Linus was the first person who learned how to play by the new rules that pervasive Internet access made possible.
+(유건)Linux was the first project for which a conscious and successful effort to use the entire world as its talent pool was made. I don't think it's a coincidence that the gestation period of Linux coincided with the birth of the World Wide Web, and that Linux left its infancy during the same period in 1993–1994 that saw the takeoff of the ISP industry and the explosion of mainstream interest in the Internet. Linus was the first person who learned how to play by the new rules that pervasive Internet access made possible.
 
 리눅스는 재능을 끌어올 풀(pool) 로 전세계를 사용하기 위해 의식적으로, 또 성공적으로 노력한 최초의 프로젝트였다. 나는 리눅스의 태동기가 월드와이드 웹의 탄생과 일치하는 것을, 그리고 리눅스가 유아기를 벗어나던 1993-1994년 경에 ISP 산업과 인터넷에 주류의 관심이 폭발하기 시작했던 것을 우연이라고 생각하지 않는다. 리누스는 급속히 보급되는 인터넷을 가능하게 했던 그 규칙에 따라 어떻게 일을 진행해야 하는지 알았던 최초의 사람이다.
 
@@ -777,23 +784,25 @@ The ``severe effort of many converging wills'' is precisely what a project like 
 
 Earlier I referred to the ``Delphi effect'' as a possible explanation for Linus's Law. But more powerful analogies to adaptive systems in biology and economics also irresistably suggest themselves. The Linux world behaves in many respects like a free market or an ecology, a collection of selfish agents attempting to maximize utility which in the process produces a self-correcting spontaneous order more elaborate and efficient than any amount of central planning could have achieved. Here, then, is the place to seek the ``principle of understanding''.
 
-앞에서 나는 리누스의 법칙을 설명하기 위해 ``델파이 효과''를 언급했다. 하지만 생물학과 경제학에서의 적응계에 비유하는 것이 더 강력한 비유라고 할 수 있다. 리눅스 세계는 많은 점에서 생태계나 자유시장과 같이 행동한다. 일단의 이기적인 에이전트들이 효용을 극대화시키기 위해 애쓰는 과정을 통해 스스로를 수정하는 자율적인 질서를 만들어 내며 이것은 중앙통제가 이룰 수 있는 어떤 결과보다 더 정교하고 효율적이다. 그렇다면 여기에서 ``이해의 원리''를 찾아낼 수 있다.
+앞에서 나는 리누스의 법칙을 설명하기 위해 ``델파이 효과''를 언급했다. 하지만 생물학과 경제학에서의 적응계에 비유하는 것이 더 강력한 비유라고 할 수 있다. 리눅스 세계는 많은 점에서 생태계나 자유시장과 같이 행동한다. 일단의 이기적인 에이전트들이 효용을 극대화시키기 위해 애쓰는 과정을 통해 스스로를 수정하는 자율적인 질서를 만들어 내며 이것은 중앙통제가 이룰 수 있는 어떤 결과보다 더 정교하고 효율적이다. 그렇다면 여기에서 ``이해의 원리''를 찾아낼 수 있다. (이현진)
 
 The ``utility function'' Linux hackers are maximizing is not classically economic, but is the intangible of their own ego satisfaction and reputation among other hackers. (One may call their motivation ``altruistic'', but this ignores the fact that altruism is itself a form of ego satisfaction for the altruist). Voluntary cultures that work this way are not actually uncommon; one other in which I have long participated is science fiction fandom, which unlike hackerdom has long explicitly recognized ``egoboo'' (ego-boosting, or the enhancement of one's reputation among other fans) as the basic drive behind volunteer activity.
 
-리눅스의 해커들이 최대화하려고 하는 ``효용함수'' 는 고전적인 의미에서의 경제적인 것은 아니고 그들 자신의 측정할 수 없는 자아 만족과 다른 해커들 사이의 평판이다. (이런 동기를 ``이타적'' 이라고 말할 지도 모르겠지만 그렇게 말하는 것은 이타주의 그 자체가 이타주의자의 자아를 만족시키는 한 형태라는 사실을 무시하는 것이다) 이런 방식으로 일을 처리하는 자발적인 문화는 사실 그렇게 찾아보기 힘든 것은 아니다. 내가 오랫동안 참여해왔던 또 하나의 문화는 과학소설 팬들의 세계(science fiction fandom) 이다. 해커들의 세계와 다르지 않게 여기에서는 ``자아상승'' (다른 팬들 사이에서 자신의 평판이 높아지는 것) 이 자발적인 활동 뒤의 기본적인 동기라고 분명하게 인식한다.
+리눅스의 해커들이 최대화하려고 하는 ``효용함수'' 는 고전적인 의미에서의 경제적인 것은 아니고 그들 자신의 측정할 수 없는 자아 만족과 다른 해커들 사이의 평판이다. (이런 동기를 ``이타적'' 이라고 말할 지도 모르겠지만 그렇게 말하는 것은 이타주의 그 자체가 이타주의자의 자아를 만족시키는 한 형태라는 사실을 무시하는 것이다) 이런 방식으로 일을 처리하는 자발적인 문화는 사실 그렇게 찾아보기 힘든 것은 아니다. 내가 오랫동안 참여해왔던 또 하나의 문화는 과학소설 팬들의 세계(science fiction fandom) 이다. 해커들의 세계와 다르지 않게 여기에서는 ``자아상승'' (다른 팬들 사이에서 자신의 평판이 높아지는 것) 이 자발적인 활동 뒤의 기본적인 동기라고 분명하게 인식한다. (이현진)
 
 Linus, by successfully positioning himself as the gatekeeper of a project in which the development is mostly done by others, and nurturing interest in the project until it became self-sustaining, has shown an acute grasp of Kropotkin's ``principle of shared understanding''. This quasi-economic view of the Linux world enables us to see how that understanding is applied.
 
-리누스는 자신을 개발은 대부분 다른 사람들에 의해 이루어지는 프로젝트의 수문장으로 위치시키는데 성공했고, 프로젝트가 스스로 유지할 수 있게 될 때까지 계속해서 흥미거리를 공급해 줌으로써 크로포트킨의 ``공유이해의 원리''의 의미를 정확하게 따랐다. 준-경제학적인 관점에서 리눅스 세계를 보면 어떻게 이해가 적용되었는지를 알 수 있다.
+리누스는 자신을 개발은 대부분 다른 사람들에 의해 이루어지는 프로젝트의 수문장으로 위치시키는데 성공했고, 프로젝트가 스스로 유지할 수 있게 될 때까지 계속해서 흥미거리를 공급해 줌으로써 크로포트킨의 ``공유이해의 원리''의 의미를 정확하게 따랐다. 준-경제학적인 관점에서 리눅스 세계를 보면 어떻게 이해가 적용되었는지를 알 수 있다. (이현진)
 
 We may view Linus's method as a way to create an efficient market in ``egoboo''—to connect the selfishness of individual hackers as firmly as possible to difficult ends that can only be achieved by sustained cooperation. With the fetchmail project I have shown (albeit on a smaller scale) that his methods can be duplicated with good results. Perhaps I have even done it a bit more consciously and systematically than he.
 
-리누스의 방법을 ``자아 상승'' 에 있어서 효과적인 시장을 만드는 길로 볼 수 있다 -- 개개인인 해커들의 이기심을 최대한 단단하게 지속적인 협동으로만 이룩할 수 있는 어려운 목적과 연결시키는 것이다. fetchmail 프로젝트에서 나는 (더 작은 규모였지만) 이 방법을 그대로 따라했고 좋은 결과를 냈다. 아마도 내가 리누스보다 더 의식적이고 체계적으로 일을 해냈을 것이다.
+리누스의 방법을 ``자아 상승'' 에 있어서 효과적인 시장을 만드는 길로 볼 수 있다 -- 개개인인 해커들의 이기심을 최대한 단단하게 지속적인 협동으로만 이룩할 수 있는 어려운 목적과 연결시키는 것이다. fetchmail 프로젝트에서 나는 (더 작은 규모였지만) 이 방법을 그대로 따라했고 좋은 결과를 냈다. 아마도 내가 리누스보다 더 의식적이고 체계적으로 일을 해냈을 것이다. (이현진)
 
 Many people (especially those who politically distrust free markets) would expect a culture of self-directed egoists to be fragmented, territorial, wasteful, secretive, and hostile. But this expectation is clearly falsified by (to give just one example) the stunning variety, quality, and depth of Linux documentation. It is a hallowed given that programmers hate documenting; how is it, then, that Linux hackers generate so much documentation? Evidently Linux's free market in egoboo works better to produce virtuous, other-directed behavior than the massively-funded documentation shops of commercial software producers.
 
-많은 사람들이 (특히 자유시장을 정치적으로 믿지 않는 사람들) 스스로에게 방향이 맞추어진 이기주의자들의 문화가 파편화되어 있으며 텃세가 심하고 소모적이면서, 비밀이 많고 적대적일 것이라고 생각한다. 하지만 이런 기대는 (예를 하나만 들자면) 리눅스 문서의 놀랄만한 다양성과 질, 깊이에 의해 산산이 부서지고 만다. 프로그래머들이 문서작업을 끔직하게 싫어한다는 것은 모두가 기정사실로 받아들이고 있다. 그렇다면 대체, 리눅스 해커들이 문서를 그렇게 많이 만들어냈다는 것은 어떻게 설명할 것인가? 분명히 리눅스의 자아상승을 위한 자유시장은 막대한 자금이 들어간 상업용 소프트웨어 프로듀서들의 문서작업보다 다른 사람을 위한 고결한 행동을 더 잘 해낸 것이다.
+많은 사람들이 (특히 자유시장을 정치적으로 믿지 않는 사람들) 스스로에게 방향이 맞추어진 이기주의자들의 문화가 파편화되어 있으며 텃세가 심하고 소모적이면서, 비밀이 많고 적대적일 것이라고 생각한다. 하지만 이런 기대는 (예를 하나만 들자면) 리눅스 문서의 놀랄만한 다양성과 질, 깊이에 의해 산산이 부서지고 만다. 프로그래머들이 문서작업을 끔직하게 싫어한다는 것은 모두가 기정사실로 받아들이고 있다. 그렇다면 대체, 리눅스 해커들이 문서를 그렇게 많이 만들어냈다는 것은 어떻게 설명할 것인가? 분명히 리눅스의 자아상승을 위한 자유시장은 막대한 자금이 들어간 상업용 소프트웨어 프로듀서들의 문서작업보다 다른 사람을 위한 고결한 행동을 더 잘 해낸 것이다. (이현진)
+
+최정민
 
 Both the fetchmail and Linux kernel projects show that by properly rewarding the egos of many other hackers, a strong developer/coordinator can use the Internet to capture the benefits of having lots of co-developers without having a project collapse into a chaotic mess. So to Brooks's Law I counter-propose the following:
 
@@ -1007,21 +1016,21 @@ Further, the SNAFU principle predicts in authoritarian organizations a progressi
 
 ## Bibliography
 
-I quoted several bits from Frederick P. Brooks's classic The Mythical Man-Month because, in many respects, his insights have yet to be improved upon. I heartily recommend the 25th Anniversary edition from Addison-Wesley (ISBN 0-201-83595-9), which adds his 1986 ``No Silver Bullet'' paper.
+* (황재완) I quoted several bits from Frederick P. Brooks's classic The Mythical Man-Month because, in many respects, his insights have yet to be improved upon. I heartily recommend the 25th Anniversary edition from Addison-Wesley (ISBN 0-201-83595-9), which adds his 1986 ``No Silver Bullet'' paper.
 
-The new edition is wrapped up by an invaluable 20-years-later retrospective in which Brooks forthrightly admits to the few judgements in the original text which have not stood the test of time. I first read the retrospective after the first public version of this essay was substantially complete, and was surprised to discover that Brooks attributed bazaar-like practices to Microsoft! (In fact, however, this attribution turned out to be mistaken. In 1998 we learned from the Halloween Documents that Microsoft's internal developer community is heavily balkanized, with the kind of general source access needed to support a bazaar not even truly possible.)
+* (황재완) The new edition is wrapped up by an invaluable 20-years-later retrospective in which Brooks forthrightly admits to the few judgements in the original text which have not stood the test of time. I first read the retrospective after the first public version of this essay was substantially complete, and was surprised to discover that Brooks attributed bazaar-like practices to Microsoft! (In fact, however, this attribution turned out to be mistaken. In 1998 we learned from the Halloween Documents that Microsoft's internal developer community is heavily balkanized, with the kind of general source access needed to support a bazaar not even truly possible.)
 
-Gerald M. Weinberg's The Psychology Of Computer Programming (New York, Van Nostrand Reinhold 1971) introduced the rather unfortunately-labeled concept of ``egoless programming''. While he was nowhere near the first person to realize the futility of the ``principle of command'', he was probably the first to recognize and argue the point in particular connection with software development.
+(배민) Gerald M. Weinberg's The Psychology Of Computer Programming (New York, Van Nostrand Reinhold 1971) introduced the rather unfortunately-labeled concept of ``egoless programming''. While he was nowhere near the first person to realize the futility of the ``principle of command'', he was probably the first to recognize and argue the point in particular connection with software development.
 
 Richard P. Gabriel, contemplating the Unix culture of the pre-Linux era, reluctantly argued for the superiority of a primitive bazaar-like model in his 1989 paper ``LISP: Good News, Bad News, and How To Win Big''. Though dated in some respects, this essay is still rightly celebrated among LISP fans (including me). A correspondent reminded me that the section titled ``Worse Is Better'' reads almost as an anticipation of Linux. The paper is accessible on the World Wide Web at http://www.naggum.no/worse-is-better.html.
 
-De Marco and Lister's Peopleware: Productive Projects and Teams (New York; Dorset House, 1987; ISBN 0-932633-05-6) is an underappreciated gem which I was delighted to see Fred Brooks cite in his retrospective. While little of what the authors have to say is directly applicable to the Linux or open-source communities, the authors' insight into the conditions necessary for creative work is acute and worthwhile for anyone attempting to import some of the bazaar model's virtues into a commercial context.
+(이건희)De Marco and Lister's Peopleware: Productive Projects and Teams (New York; Dorset House, 1987; ISBN 0-932633-05-6) is an underappreciated gem which I was delighted to see Fred Brooks cite in his retrospective. While little of what the authors have to say is directly applicable to the Linux or open-source communities, the authors' insight into the conditions necessary for creative work is acute and worthwhile for anyone attempting to import some of the bazaar model's virtues into a commercial context.
 
-Finally, I must admit that I very nearly called this essay ``The Cathedral and the Agora'', the latter term being the Greek for an open market or public meeting place. The seminal ``agoric systems'' papers by Mark Miller and Eric Drexler, by describing the emergent properties of market-like computational ecologies, helped prepare me to think clearly about analogous phenomena in the open-source culture when Linux rubbed my nose in them five years later. These papers are available on the Web at http://www.agorics.com/agorpapers.html.
+(이건희)Finally, I must admit that I very nearly called this essay ``The Cathedral and the Agora'', the latter term being the Greek for an open market or public meeting place. The seminal ``agoric systems'' papers by Mark Miller and Eric Drexler, by describing the emergent properties of market-like computational ecologies, helped prepare me to think clearly about analogous phenomena in the open-source culture when Linux rubbed my nose in them five years later. These papers are available on the Web at http://www.agorics.com/agorpapers.html.
 
 ## 읽어볼 만한 글들
 
-프레드릭 브룩스 (Frederick P. Brooks) 의 고전인 [Man-Month 의 신화 (The Mythical Man-Month)]에서 몇몇 부분을 인용했다. 앞으로도 여러 관점에서 그의 통찰력을 발전시킬 수 있을 것이다. 애디슨-웨슬리(Addson-Wesley) 의 25주년 기념판 (ISBN 0-201-83595-9)을 추천한다.여기에는 그가 1986년에 쓴 글, ``은총알은 없다 (No Silver Bullet)''가 들어있다. 새 기념판은 매우 귀중한 20년 후의 회고를 담고 있다. 브룩스는 여기서 원문의 몇몇 판단이 시간이 흐름에 따라 옳지 않은 것으로 드러났다고 솔직하게 인정하고 있다. 나는 이 글을 대략 마무리 지은 후에 회고담을 읽어보았는데, 브룩스가 시장 스타일을 마이크로소프트에서 연유한 관습으로 생각한다는 것을 발견하고 깜짝 놀랐다!
+* (황재완) 프레드릭 브룩스 (Frederick P. Brooks) 의 고전인 [Man-Month 의 신화 (The Mythical Man-Month)]에서 몇몇 부분을 인용했다. 앞으로도 여러 관점에서 그의 통찰력을 발전시킬 수 있을 것이다. 애디슨-웨슬리(Addson-Wesley) 의 25주년 기념판 (ISBN 0-201-83595-9)을 추천한다.여기에는 그가 1986년에 쓴 글, ``은총알은 없다 (No Silver Bullet)''가 들어있다. 새 기념판은 매우 귀중한 20년 후의 회고를 담고 있다. 브룩스는 여기서 원문의 몇몇 판단이 시간이 흐름에 따라 옳지 않은 것으로 드러났다고 솔직하게 인정하고 있다. 나는 이 글을 대략 마무리 지은 후에 회고담을 읽어보았는데, 브룩스가 시장 스타일을 마이크로소프트에서 연유한 관습으로 생각한다는 것을 발견하고 깜짝 놀랐다!
 
 제랄드 M. 와인버그의 [컴퓨터 프로그래밍의 심리학 (The Psychology Of Computer Programming)] (New York, Van Nostrand Reinhold 1971) 은 비운의 개념인 ``자아를 내세우지 않는 프로그래밍'' 을 소개했다. ``명령의 원칙'' 이 무용지물이라는 것을 처음으로 깨달은 사람이 와인버그는 아니지만 그는 아마도 처음으로 그것을 인식하고 특별히 소프트웨어 개발과 관련하여 논지를 전개시킨 첫 번째 사람일 것이다.
 
@@ -1034,6 +1043,6 @@ Finally, I must admit that I very nearly called this essay ``The Cathedral and t
 ## Acknowledgements
 ## 감사의 글
 
-This essay was improved by conversations with a large number of people who helped debug it. Particular thanks to Jeff Dutky <dutky@wam.umd.edu>, who suggested the ``debugging is parallelizable'' formulation, and helped develop the analysis that proceeds from it. Also to Nancy Lebovitz <nancyl@universe.digex.net> for her suggestion that I emulate Weinberg by quoting Kropotkin. Perceptive criticisms also came from Joan Eslinger <wombat@kilimanjaro.engr.sgi.com> and Marty Franz <marty@net-link.net> of the General Technics list. Glen Vandenburg <glv@vanderburg.org> pointeed out the importance of self-selection in contributor populations and suggested the fruitful idea that much development rectifies `bugs of omission'; Daniel Upper <upper@peak.org> suggested the natural analogies for this. I'm grateful to the members of PLUG, the Philadelphia Linux User's group, for providing the first test audience for the first public version of this essay. Paula Matuszek <matusp00@mh.us.sbphrd.com> enlightened me about the practice of software management. Phil Hudson <phil.hudson@iname.com> reminded me that the social organization of the hacker culture mirrors the organization of its software, and vice-versa. John Buck <johnbuck@sea.ece.umassd.edu> pointed out that MATLAB makes an instructive parallel to Emacs. Russell Johnston <russjj@mail.com> brought me to consciousness about some of the mechanisms discussed in ``How Many Eyeballs Tame Complexity.'' Finally, Linus Torvalds's comments were helpful and his early endorsement very encouraging.
+(김주윤)This essay was improved by conversations with a large number of people who helped debug it. Particular thanks to Jeff Dutky <dutky@wam.umd.edu>, who suggested the ``debugging is parallelizable'' formulation, and helped develop the analysis that proceeds from it. Also to Nancy Lebovitz <nancyl@universe.digex.net> for her suggestion that I emulate Weinberg by quoting Kropotkin. Perceptive criticisms also came from Joan Eslinger <wombat@kilimanjaro.engr.sgi.com> and Marty Franz <marty@net-link.net> of the General Technics list. Glen Vandenburg <glv@vanderburg.org> pointeed out the importance of self-selection in contributor populations and suggested the fruitful idea that much development rectifies `bugs of omission'; Daniel Upper <upper@peak.org> suggested the natural analogies for this. I'm grateful to the members of PLUG, the Philadelphia Linux User's group, for providing the first test audience for the first public version of this essay. Paula Matuszek <matusp00@mh.us.sbphrd.com> enlightened me about the practice of software management. Phil Hudson <phil.hudson@iname.com> reminded me that the social organization of the hacker culture mirrors the organization of its software, and vice-versa. John Buck <johnbuck@sea.ece.umassd.edu> pointed out that MATLAB makes an instructive parallel to Emacs. Russell Johnston <russjj@mail.com> brought me to consciousness about some of the mechanisms discussed in ``How Many Eyeballs Tame Complexity.'' Finally, Linus Torvalds's comments were helpful and his early endorsement very encouraging.
 
 이 글은 많은 사람들과의 대화를 통해 잘못을 수정하는데 도움을 받았다. 특별히 제프 덧키(Jeff Dutky : <dutky@wam.umd.edu>) 에게 감사한다. 그는 ``디버깅은 병렬처리가 가능하다'' 는 말을 제안해 주었고 그로부터 이어지는 분석을 발전시키는데 도움을 주었다. 낸시 레보비츠(Nancy Lebovitz : <nancyl@univers.digex.net>) 에게도 감사한다. 그녀는 크로포트킨을 인용하여 내가 와인버그를 흉내내도록 도와주었다. General Technics 리스트의 조안 에슬링거 (Joan Eslinger <wombat@kilimanjaro.engr.sgi.com>) 와 마티 프란츠 (Marty Franz <marty@net-link.net>) 도 예리한 비판을 보내주었다. 폴 에거트 (Paul Eggert <eggert@twinsun.com>)는 GPL 과 시장 모델의 상충되는 점을 알려주었다. 이 글의 첫 번째 공개버전의 첫 번째 시험적인 청중이 되어준 필라델피아 리눅스 사용자 모임 (PLUG : Philadelphia LInux User's Group) 의 멤버들에게 감사한다. 마지막으로 리누스 토발즈의 논평은 도움이 되었으며 초기에 그가 해준 추천은 매우 격려가 되는 것이었다.
