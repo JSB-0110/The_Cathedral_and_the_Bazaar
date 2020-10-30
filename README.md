@@ -384,7 +384,7 @@ This effect will be greatly amplified if the difficulty of following trace paths
 
 (김동윤)Having studied Linus's behavior and formed a theory about why it was successful, I made a conscious decision to test this theory on my new (admittedly much less complex and ambitious) project.
 
-리누스의 행동을 연구하고 그것이 왜 성공적이었는지에 대한 이론을 만든 후, 나는 이 이론을 내 새로운 프로젝트 (물론 훨씬 덜 복잡하고 덜 야심적인 프로젝트) 에 적용해 보기로 했다.
+리눅스의 행동을 연구하고 그것이 왜 성공적이었는지에 대한 이론을 만든 후, 나는 이 이론을 내 새로운 프로젝트 (물론 훨씬 덜 복잡하고 덜 야심적인 프로젝트) 에 적용해 보기로 했다.
 
 But the first thing I did was reorganize and simplify popclient a lot. Carl Harris's implementation was very sound, but exhibited a kind of unnecessary complexity common to many C programmers. He treated the code as central and the data structures as support for the code. As a result, the code was beautiful but the data structure design ad-hoc and rather ugly (at least by the high standards of this veteran LISP hacker).
 
