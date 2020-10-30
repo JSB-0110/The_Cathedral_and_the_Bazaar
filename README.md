@@ -400,11 +400,11 @@ For the first month or so, then, I was simply following out the implications of 
 
 The first serious change I made was to add IMAP support. 
 
-내가 처음 한 중요한 변경사항은 IMAP 지원을 추가하는 것이었다.
+처음 한 중요한 변경사항은 IMAP 지원을 추가하는 것이었다.
 
 I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). 
 
-나는 프로토콜 머신을 일반 드라이버와 세 가지 메서드 테이블(POP2, POP3, IMAP용)으로 재구성했다.
+나는 이것을 프로토콜 머신을 일반 드라이버와 세 가지 메서드 테이블(POP2, POP3, IMAP용)으로 재구성하는 식으로 수행했다.
 
 This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
 
