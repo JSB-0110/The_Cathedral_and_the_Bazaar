@@ -14,7 +14,6 @@ $Date: 2020/10/08 09:02:14 $
 
 ### 문서이력 
 
-* 6조 201723272 안창희
 * merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 * KLDP 번역 2011/02/08 버전을 병합함
 
@@ -394,12 +393,24 @@ I had another purpose for rewriting besides improving the code and the data stru
 
 그러나 나는 코드와 자료구조를 개선하는 것 외에 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무언가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 역할을 맡는 것은 재미가 없다.
 
-**6조 안창희(201723272)**
-For the first month or so, then, I was simply following out the implications of Carl's basic design. The first serious change I made was to add IMAP support. I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
-*************************
+(안창희)
+For the first month or so, then, I was simply following out the implications of Carl's basic design. 
 
-처음 한달 정도가 지날 동안 나는 그저 칼의 기본적인 설계가 어떤 의미를 가지고 있는지 따라다니기만 했다. 내가 처음으로 중요한 수정을 가한 것은 IMAP 지원이었다. 프로토콜 머신을 일반적인 드라이버와 세가지 메소드 테이블 (POP2, POP3, IMAP을 지원하는)로 재조직했다. 이것과 그 이전의 변경들은 프로그래머들이 기억해 둘만한 일반적인 원리를 보여준다. 특히 C 와 같이 즉흥적으로 프로그램하기 힘든 언어에서는. (박상혁)
+처음 한 달 정도를 나는 칼의 기본 설계가 어떤 의미를 가진것인지 그저 따라다니기만 했다.
 
+The first serious change I made was to add IMAP support. 
+
+내가 처음 한 중요한 변경사항은 IMAP 지원을 추가하는 것이었다.
+
+I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). 
+
+나는 프로토콜 머신을 일반 드라이버와 세 가지 메서드 테이블(POP2, POP3, IMAP용)으로 재구성했다.
+
+This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
+
+이전의 변화와 더불어 이것은 프로그래머가 명심하기 좋은 일반적인 원리를 보여준다, 특히 C와 같이 자연스럽게 동적 타이핑을 지원하지 않는 언어에 있어서는:
+   
+(박상혁)
 9. Smart data structures and dumb code works a lot better than the other way around.
 
 9. 자료구조를 훌륭하게 만들고 코드를 멍청하게 만드는 것이 그 반대의 경우보다 훨씬 잘 작동한다. (Smart data structures and dumb code works a lot better than the other way around)
