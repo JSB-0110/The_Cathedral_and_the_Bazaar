@@ -395,19 +395,21 @@ I had another purpose for rewriting besides improving the code and the data stru
 
 (안창희)
 For the first month or so, then, I was simply following out the implications of Carl's basic design. 
+
 처음 한 달 정도를 나는 칼의 기본 설계가 어떤 의미를 가진것인지 그저 따라다니기만 했다.
 
 The first serious change I made was to add IMAP support. 
+
 내가 처음 한 중요한 변경사항은 IMAP 지원을 추가하는 것이었다.
 
 I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). 
+
 나는 프로토콜 머신을 일반 드라이버와 세 가지 메서드 테이블(POP2, POP3, IMAP용)으로 재구성했다.
 
 This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
-이전의 변화와 더불어 이것은 프로그래머가 명심하기 좋은 일반적인 원리를 보여준다, 특히 C와 같이 자연스럽게 동적 타이핑을 지원하지 않는 언어에서는 더 그렇다.
 
+이전의 변화와 더불어 이것은 프로그래머가 명심하기 좋은 일반적인 원리를 보여준다, 특히 C와 같이 자연스럽게 동적 타이핑을 지원하지 않는 언어에 있어서는:
    
-
 (박상혁)
 9. Smart data structures and dumb code works a lot better than the other way around.
 
