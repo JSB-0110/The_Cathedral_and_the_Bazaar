@@ -401,7 +401,7 @@ For the first month or so, then, I was simply following out the implications of 
 
 9. 자료구조를 훌륭하게 만들고 코드를 멍청하게 만드는 것이 그 반대의 경우보다 훨씬 잘 작동한다. (Smart data structures and dumb code works a lot better than the other way around)
 
-(이상웅) Brooks, Chapter 9: ``Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.'' Allowing for thirty years of terminological/cultural shift, it's the same point.
+Brooks, Chapter 9: ``Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.'' Allowing for thirty years of terminological/cultural shift, it's the same point.
 
 브룩스의 책 9장(Chapter 9) 에 이렇게 쓰여있다. ``내게 [코드]를 보여주고 [자료구조]를 숨긴다면 나는 계속 어리둥절할 것이다. 자료구조를 보여준다면 코드는 볼 필요도 없이 뻔한 것이다.'' 사실 브룩스는 ``흐름도'' 와 ``테이블''이라고 이야기했다. 하지만 30년간 변해온 용어들과 문화를 고려한다면 거의 똑같은 말이라고 할 수 있다.
 
@@ -413,17 +413,17 @@ That changed, radically, when popclient learned how to forward fetched mail to t
 
 fetchmail 이 어떻게 SMTP 포트로 가져온 메일을 포워드 시켜야 하는지 알고 난 후에는 상황이 급변했다. 그에 대해서는 잠시 후에 이야기할 것이다. 하지만 그보다 먼저, 앞서 나는 리누스 토발즈가 옳은 방법으로 일을 해냈다는 내 이론을 시험하기 위해 이 프로젝트를 수행하기로 했다고 말했다. 어떻게 시험을 했을까? 다음과 같은 방법을 사용했다.
 
-* I released early and often (almost never less often than every ten days; during periods of intense development, once a day).
-* 일찍, 자주 발표했다. (발표간격이 10일을 넘는 경우는 거의 없었으며 개발에 몰두해 있을 때는 하루에 한번씩 발표했다)
+(이상웅)* I released early and often (almost never less often than every ten days; during periods of intense development, once a day).
+* 일찍, 그리고 자주 공개했다. (다음 공개는 보통 열흘이 되기 전 이루어졌으며, 개발이 한창일 때는 하루에 한번 꼴이었다.)
 
 * I grew my beta list by adding to it everyone who contacted me about fetchmail.
-* fetchmail 에 대한 일로 나에게 연락해 오는 사람은 누구든지 베타테스터 목록에 올렸다.
+*  fetchmail 건으로 내게 연락하는 사람 모두를 베타테스터 목록에 추가하여 목록을 늘렸다. 
 
 * I sent chatty announcements to the beta list whenever I released, encouraging people to participate.
-* 새로 발표할 때마다 베타테스터들에게 떠들썩하게 발표를 알리며 사람들이 참여하도록 격려했다.
+* 사람들의 참여를 독려하는 차원에서, 공개하는 날마다 베타테스터들에게 친근한 어조로 소식을 알렸다.
 
 * And I listened to my beta-testers, polling them about design decisions and stroking them whenever they sent in patches and feedback.
-* 그리고 그들의 이야기를 들었다. 설계 결정에 대해 투표를 하기도 했고 패치나 피드백을 보내올 때마다 베타테스터들을 구슬렀다.
+* 그리고 베타테스터들의 말에 귀를 기울였다. 디자인을 결정해야하는 사안에서는 투표를 하기도 하였으며, 그들이 패치나 피드백을 보내올 때마다 잘 구슬려 세우곤 했다.
 
 The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
 
