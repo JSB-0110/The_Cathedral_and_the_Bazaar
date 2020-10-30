@@ -14,7 +14,6 @@ $Date: 2020/10/08 09:02:14 $
 
 ### 문서이력 
 
-* 6조 201723272 안창희
 * merge version 3.0 from http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 * KLDP 번역 2011/02/08 버전을 병합함
 
@@ -394,12 +393,22 @@ I had another purpose for rewriting besides improving the code and the data stru
 
 그러나 나는 코드와 자료구조를 개선하는 것 외에 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무언가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 역할을 맡는 것은 재미가 없다.
 
-**6조 안창희(201723272)**
-For the first month or so, then, I was simply following out the implications of Carl's basic design. The first serious change I made was to add IMAP support. I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
-*************************
+(안창희)
+For the first month or so, then, I was simply following out the implications of Carl's basic design. 
+처음 한 달 정도를 나는 칼의 기본 설계가 어떤 의미를 가진것인지 그저 따라다니기만 했다.
 
-처음 한달 정도가 지날 동안 나는 그저 칼의 기본적인 설계가 어떤 의미를 가지고 있는지 따라다니기만 했다. 내가 처음으로 중요한 수정을 가한 것은 IMAP 지원이었다. 프로토콜 머신을 일반적인 드라이버와 세가지 메소드 테이블 (POP2, POP3, IMAP을 지원하는)로 재조직했다. 이것과 그 이전의 변경들은 프로그래머들이 기억해 둘만한 일반적인 원리를 보여준다. 특히 C 와 같이 즉흥적으로 프로그램하기 힘든 언어에서는. (박상혁)
+The first serious change I made was to add IMAP support. 
+내가 처음 한 중요한 변경사항은 IMAP 지원을 추가하는 것이었다.
 
+I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). 
+나는 프로토콜 머신을 일반 드라이버와 세 가지 메서드 테이블(POP2, POP3, IMAP용)으로 재구성했다.
+
+This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
+이전의 변화와 더불어 이것은 프로그래머가 명심하기 좋은 일반적인 원리를 보여준다, 특히 C와 같이 자연스럽게 동적 타이핑을 지원하지 않는 언어에서는 더 그렇다.
+
+   
+
+(박상혁)
 9. Smart data structures and dumb code works a lot better than the other way around.
 
 9. 자료구조를 훌륭하게 만들고 코드를 멍청하게 만드는 것이 그 반대의 경우보다 훨씬 잘 작동한다. (Smart data structures and dumb code works a lot better than the other way around)
@@ -430,19 +439,19 @@ That changed, radically, when popclient learned how to forward fetched mail to t
 
 (정세빈) The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
 
-위의 방법들은 단순하지만 즉각적으로 효과를 보였다. 나는 프로젝트를 시작할때부터 대부분의 개발자들이 죽을 만큼 원할 만한 품질의 버그 보고서를 받았는데, 종종 보고서에 훌륭한 수정안이 붙어있기도 하였다. 사려 깊은 비판과 팬 메일, 지능적인 기능 제안들 또한 받았다. 이런 과정을 통해 다음과 같은 결론을 이끌어 낼 수 있었다.
+위의 단순한 방법들에 의한 효과는 즉각적으로 나타났다. 나는 프로젝트 시작부터 대부분의 개발자라면 죽일 만큼 갖고 싶어 할 품질의 버그 리포트를 받았는데, 때로는 리포트에 훌륭한 수정이 붙어있기도 하였다. 나는 사려 깊은 비판과 팬 메일, 지능적인 기능 제안들 또한 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있었다.:
 
 10\. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
 
-10\. 만약 당신이 베타테스터들을 가장 가치 있는 자원처럼 대한다면, 테스터들은 기꺼이 당신의 가장 가치 있는 자원이 되는 것으로 응답할 것이다.
+10\. 네가 베타테스터들을 너의 가장 가치 있는 자원처럼 대한다면, 그들은 너의 가장 가치 있는 자원이 되는 것으로 응답할 것이다.
 
 One interesting measure of fetchmail's success is the sheer size of the project beta list, fetchmail-friends. At the time of latest revision of this paper (November 2000) it has 287 members and is adding two or three a week.
 
-Fetchmail의 성공에 대한 흥미로운 척도 중 하나는 프로젝트 베타테스터 목록인 fetchmail-friends의 크기, 즉 베타테스터들의 수였다. 이 글을 최근에 개정한 당시(2000년 11월), fetchmail-friends에는 287명의 회원이 있었고 일주일에 2~3 명이 추가되고 있었다.
+Fetchmail의 성공에 대한 흥미로운 척도 중 하나는 프로젝트 베타테스터 목록, fetchmail-friends의 크기였다. 이 글의 최근 개정 (2000년 11월) 당시에는 287명의 회원이 속해 있었고 일주일에 2~3 명이 추가되고 있었다.
 
 Actually, when I revised in late May 1997 I found the list was beginning to lose members from its high of close to 300 for an interesting reason. Several people have asked me to unsubscribe them because fetchmail is working so well for them that they no longer need to see the list traffic! Perhaps this is part of the normal life-cycle of a mature bazaar-style project.
 
-사실, 1997년 5월 말 경에 글을 수정했을 때, 나는 이 목록이 300명 가까이에서 최고점을 찍고 회원을 점점 잃기 시작했다는 것을 발견하였는데, 그 이유가 매우 흥미로웠다. 몇몇 사람들이 fetchmail이 잘 작동하기 때문에 더 이상 메일링 리스트를 볼 필요가 없다며 나에게 구독 취소를 요청한 것이다. 이는 아마 성숙한 시장 스타일(bazaar-style)의 프로젝트가 가지는 정상적인 수명 주기의 일부일 것이다.
+사실, 1997년 5월 말 경에 글을 수정했을 때, 나는 이 목록이 흥미로운 이유로 300명에 가까웠던 최고점에서 회원을 잃기 시작했다는 것을 발견하였다. 몇몇 사람들이 fetchmail이 잘 작동하기 때문에 더 이상 메일링리스트를 볼 필요가 없다며 나에게 구독 취소를 요청한 것이다! 아마 이것이 성숙한 바자-스타일(bazaar-style) 프로젝트가 가지는 정상적인 수명 주기의 일부일 것이다.
 
 
 ## Popclient becomes Fetchmail
