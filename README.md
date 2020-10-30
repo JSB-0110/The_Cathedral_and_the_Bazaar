@@ -427,7 +427,7 @@ fetchmail 이 어떻게 SMTP 포트로 가져온 메일을 포워드 시켜야 �
 
 (정세빈) The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
 
-위의 방법들은 단순하지만 즉각적으로 효과를 보였다. 나는 프로젝트를 시작할때부터 대부분의 개발자들이 죽을 만큼 원할 만한 품질의 버그 보고서를 받았는데, 종종 보고서에 훌륭한 수정안이 붙어있기도 하였다. 사려 깊은 비판과 팬 메일, 지능적인 기능 제안들 또한 받았다. 이런 과정을 통해 다음과 같은 결론을 이끌어 낼 수 있었다.
+위의 방법들은 단순하지만 즉각적으로 효과를 보였다. 나는 프로젝트를 시작할때부터 대부분의 개발자들이 죽을 만큼 바랐을 만한 품질의 버그 보고서를 받았는데, 종종 보고서에 훌륭한 수정안이 붙어있기도 하였다. 사려 깊은 비판과 팬 메일, 기발한 기능 제안들 또한 받았다. 이런 과정을 통해 다음과 같은 결론을 이끌어 내었다.
 
 10\. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
 
@@ -435,11 +435,11 @@ fetchmail 이 어떻게 SMTP 포트로 가져온 메일을 포워드 시켜야 �
 
 One interesting measure of fetchmail's success is the sheer size of the project beta list, fetchmail-friends. At the time of latest revision of this paper (November 2000) it has 287 members and is adding two or three a week.
 
-Fetchmail의 성공에 대한 흥미로운 척도 중 하나는 프로젝트 베타테스터 목록인 fetchmail-friends의 크기, 즉 베타테스터들의 수였다. 이 글을 최근에 개정한 당시(2000년 11월), fetchmail-friends에는 287명의 회원이 있었고 일주일에 2~3 명이 추가되고 있었다.
+Fetchmail의 성공에 대한 흥미로운 척도 중 하나는 프로젝트 베타테스터 목록인 fetchmail-friends의 크기, 즉 베타테스터들의 수였다. 이 글을 최근에 개정한 2000년 11월 당시, fetchmail-friends에는 287명의 회원이 있었고 일주일에 2~3 명이 추가되고 있었다.
 
 Actually, when I revised in late May 1997 I found the list was beginning to lose members from its high of close to 300 for an interesting reason. Several people have asked me to unsubscribe them because fetchmail is working so well for them that they no longer need to see the list traffic! Perhaps this is part of the normal life-cycle of a mature bazaar-style project.
 
-사실, 1997년 5월 말 경에 글을 수정했을 때, 나는 이 목록이 300명 가까이에서 최고점을 찍고 회원을 점점 잃기 시작했다는 것을 발견하였는데, 그 이유가 매우 흥미로웠다. 몇몇 사람들이 fetchmail이 잘 작동하기 때문에 더 이상 메일링 리스트를 볼 필요가 없다며 나에게 구독 취소를 요청한 것이다. 이는 아마 성숙한 시장 스타일(bazaar-style)의 프로젝트가 가지는 정상적인 수명 주기의 일부일 것이다.
+사실, 1997년 5월 말 경에 글을 수정했을 때, 나는 이 목록이 300명 가까이에서 최고점을 찍고 회원을 점점 잃기 시작했다는 것을 발견하였는데, 그 이유가 매우 흥미로웠다. 몇몇 사람들이 fetchmail이 잘 작동하기 때문에 더 이상 메일링 리스트를 볼 필요가 없다며 구독 취소를 요청한 것이다. 이는 아마 성숙한 시장 스타일(bazaar-style)의 프로젝트가 가지는 정상적인 수명 주기의 일부일 것이다.
 
 
 ## Popclient becomes Fetchmail
