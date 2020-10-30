@@ -381,37 +381,51 @@ This effect will be greatly amplified if the difficulty of following trace paths
 
 ## 장미가 장미다우려면
 
-Having studied Linus's behavior and formed a theory about why it was successful, I made a conscious decision to test this theory on my new (admittedly much less complex and ambitious) project.
+(김동윤)Having studied Linus's behavior and formed a theory about why it was successful, I made a conscious decision to test this theory on my new (admittedly much less complex and ambitious) project.
 
-리누스의 행동을 연구하고 그것이 왜 성공적이었는지에 대한 이론을 만든 후, 나는 이 이론을 내 새로운 프로젝트 (물론 훨씬 덜 복잡하고 덜 야심적인 프로젝트) 에 적용해 보기로 했다.
+리눅스의 행동을 연구하고 그것이 왜 성공적이었는지에 대한 이론을 만든 후, 나는 이 이론을 내 새로운 프로젝트 (물론 훨씬 덜 복잡하고 덜 야심적인 프로젝트) 에 적용해 보기로 했다.
 
 But the first thing I did was reorganize and simplify popclient a lot. Carl Harris's implementation was very sound, but exhibited a kind of unnecessary complexity common to many C programmers. He treated the code as central and the data structures as support for the code. As a result, the code was beautiful but the data structure design ad-hoc and rather ugly (at least by the high standards of this veteran LISP hacker).
 
-그러나 내가 가장 먼저 한 일은 popclient 를 더 재조직화하고 단순화한 것이었다. 칼 해리스 (Carl Harris) 의 구현방식은 매우 건강한 것이었지만 많은 C 프로그래머들에게서 볼 수 있었던 것처럼 일종의 불필요한 복잡성을 보여주고 있었다. 그는 코드를 중심적인 것으로, 자료구조는 코드를 받쳐주는 것으로 취급했다. 그 결과 코드는 아름답지만 자료구조는 임시변통(ad-hoc)으로 설계되었고, 보기에 좋지 않았다. (최소한 옛 LISP 해커의 높은 기준에서 보자면 말이다)
+그러나 내가 가장 먼저 한 일은 popclient 를 더 재정리하고 단순화한 것이었다. 칼 해리스 (Carl Harris) 의 구현방식은 매우 괜찮았지만 많은 C 프로그래머들에게서 볼 수 있는 일종의 불필요한 복잡성을 보여주었다. 그는 코드를 중심으로 취급하고 자료구조는 코드를 받쳐주는 것으로 사용했다. 그 결과 코드는 아름답지만 자료구조는 임시변통(ad-hoc)으로 설계되었고, 보기에 좋지 않았다. (최소한 옛 LISP 해커의 높은 기준에서 보자면 말이다)
 
 I had another purpose for rewriting besides improving the code and the data structure design, however. That was to evolve it into something I understood completely. It's no fun to be responsible for fixing bugs in a program you don't understand.
 
-그리고 코드와 자료구조를 개선하는 것 말고도 나는 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무엇인가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 책임을 맡는 것은 괴로운 일이다.
+그러나 나는 코드와 자료구조를 개선하는 것 외에 또다른 목적을 가지고 있었다. 그것은 popclient를 내가 완전히 이해하는 무언가로 진화시키는 것이었다. 이해하지 못하는 프로그램의 버그를 수정하는 역할을 맡는 것은 재미가 없다.
 
-For the first month or so, then, I was simply following out the implications of Carl's basic design. The first serious change I made was to add IMAP support. I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
+(안창희)
+For the first month or so, then, I was simply following out the implications of Carl's basic design. 
 
-처음 한달 정도가 지날 동안 나는 그저 칼의 기본적인 설계가 어떤 의미를 가지고 있는지 따라다니기만 했다. 내가 처음으로 중요한 수정을 가한 것은 IMAP 지원이었다. 프로토콜 머신을 일반적인 드라이버와 세가지 메소드 테이블 (POP2, POP3, IMAP을 지원하는)로 재조직했다. 이것과 그 이전의 변경들은 프로그래머들이 기억해 둘만한 일반적인 원리를 보여준다. 특히 C 와 같이 즉흥적으로 프로그램하기 힘든 언어에서는.
+처음 한 달 정도를 나는 칼의 기본 설계가 시사하는 바를 그대로 따라다니기만 했다.
 
+The first serious change I made was to add IMAP support. 
+
+내가 처음 만든 중요한 변경점은 IMAP 지원을 추가하는 것이었다.
+
+I did this by reorganizing the protocol machines into a generic driver and three method tables (for POP2, POP3, and IMAP). 
+
+나는 이것을 프로토콜 머신을 일반 드라이버와 세 가지 메서드 테이블(POP2, POP3, IMAP용)으로 재구성하는 식으로 수행했다.
+
+This and the previous changes illustrate a general principle that's good for programmers to keep in mind, especially in languages like C that don't naturally do dynamic typing:
+
+이전의 변화와 더불어 이것은 프로그래머가 명심하기 좋은 일반적인 원리를 보여준다, 특히 C와 같이 자연스럽게 동적 타이핑을 지원하지 않는 언어에 있어서는 더 그렇다.
+   
+(박상혁)
 9. Smart data structures and dumb code works a lot better than the other way around.
 
 9. 자료구조를 훌륭하게 만들고 코드를 멍청하게 만드는 것이 그 반대의 경우보다 훨씬 잘 작동한다. (Smart data structures and dumb code works a lot better than the other way around)
 
-Brooks, Chapter 9: ``Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.'' Allowing for thirty years of terminological/cultural shift, it's the same point.
+Brooks, Chapter 9: **Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious.** Allowing for thirty years of terminological/cultural shift, it's the same point.
 
-브룩스의 책 9장(Chapter 9) 에 이렇게 쓰여있다. ``내게 [코드]를 보여주고 [자료구조]를 숨긴다면 나는 계속 어리둥절할 것이다. 자료구조를 보여준다면 코드는 볼 필요도 없이 뻔한 것이다.'' 사실 브룩스는 ``흐름도'' 와 ``테이블''이라고 이야기했다. 하지만 30년간 변해온 용어들과 문화를 고려한다면 거의 똑같은 말이라고 할 수 있다.
+브룩스의 책 9장에 이렇게 쓰여 있다. **[자료구조]를 꽁꽁 숨긴다면, 내게 [코드]를 보여줄지언정 나는 계속 어리둥절할 것이다. 하지만 자료구조를 보여준다면, 나는 코드를 꼭 보려고 하지는 않을 것이다. 이는 명백한 사실이다.** 여기서 브룩스는 흐름도(flowchart)와 표(table)라고 표현했다. 다만 30년 동안의 용어와 문화의 변화를 고려한다면, 본질적인 의미는 같다고 할 수 있다.
 
 At this point (early September 1996, about six weeks from zero) I started thinking that a name change might be in order—after all, it wasn't just a POP client any more. But I hesitated, because there was as yet nothing genuinely new in the design. My version of popclient had yet to develop an identity of its own.
 
-이 시점에서 (1996년 9월 초, 일을 시작하고 6 주가 지난 후) 나는 이름을 바꿀 때가 되었다고 생각하기 시작했다. 이 프로그램은 더 이상 POP 클라이언트만이 아니었다. 하지만 설계상에 정말 새로운 것이 들어가 있지 않았기 때문에 머뭇거리고 있었다. 내가 만든 popclient 는 아직 스스로의 정체성을 확립하지 못하고 있었다.
+일을 시작하고 6주가 지난 1996년 9월 초쯤, 나는 프로그램의 이름을 바꿔야 하는 것이 옳다고 생각했다. 이 프로그램이 더 이상 POP 클라이언트로서의 기능만을 수행하는 것이 아니었기 때문이다. 하지만 설계상으로 정말 새롭다고 할 만한 무언가가 아직 없었기 때문에, 나는 내 판단에 대해 확신하지 못하고 망설이고 있었다. 내가 만든 popclient 는 아직 스스로의 정체성을 확립하지 못하고 있었다.
 
 That changed, radically, when popclient learned how to forward fetched mail to the SMTP port. I'll get to that in a moment. But first: I said earlier that I'd decided to use this project to test my theory about what Linus Torvalds had done right. How (you may well ask) did I do that? In these ways:
 
-fetchmail 이 어떻게 SMTP 포트로 가져온 메일을 포워드 시켜야 하는지 알고 난 후에는 상황이 급변했다. 그에 대해서는 잠시 후에 이야기할 것이다. 하지만 그보다 먼저, 앞서 나는 리누스 토발즈가 옳은 방법으로 일을 해냈다는 내 이론을 시험하기 위해 이 프로젝트를 수행하기로 했다고 말했다. 어떻게 시험을 했을까? 다음과 같은 방법을 사용했다.
+하지만 popclient가 가져온 메일을 어떻게 SMTP 포트로 전달해야 하는지 알고 난 후에는 상황이 급격히 바뀌었다. 이에 대해서는 잠시 후에 이야기하도록 하겠다. 그에 앞서, 나는 리누스 토발즈가 옳은 방법으로 일을 해냈다는 내 이론을 검증하기 위해 이 프로젝트를 수행하기로 했다고 말했다. 어떻게 검증했을까? 다음과 같은 방법을 사용했다.
 
 (이상웅)* I released early and often (almost never less often than every ten days; during periods of intense development, once a day).
 * 일찍, 그리고 자주 공개했다. (다음 공개는 보통 열흘이 되기 전 이루어졌으며, 개발이 한창일 때는 하루에 한번 꼴이었다.)
@@ -425,21 +439,22 @@ fetchmail 이 어떻게 SMTP 포트로 가져온 메일을 포워드 시켜야 �
 * And I listened to my beta-testers, polling them about design decisions and stroking them whenever they sent in patches and feedback.
 * 그리고 베타테스터들의 말에 귀를 기울였다. 디자인을 결정해야하는 사안에서는 투표를 하기도 하였으며, 그들이 패치나 피드백을 보내올 때마다 잘 구슬려 세우곤 했다.
 
-The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
+(정세빈) The payoff from these simple measures was immediate. From the beginning of the project, I got bug reports of a quality most developers would kill for, often with good fixes attached. I got thoughtful criticism, I got fan mail, I got intelligent feature suggestions. Which leads to:
 
-이 단순한 방법들은 즉각 효력을 나타냈다. 프로젝트를 시작할 때부터 개발자들이라면 학수고대할 만한 버그 리포트를, 때로는 훌륭하게 수정된 코드를 받을 수 있었다. 사려깊은 비판과 팬 메일, 기능제안들을 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있다.
+위의 단순한 방법들에 의한 효과는 즉각적으로 나타났다. 나는 프로젝트 시작부터 대부분의 개발자라면 죽일 만큼 갖고 싶어 할 품질의 버그 리포트를 받았는데, 때로는 리포트에 훌륭한 수정이 붙어있기도 하였다. 나는 사려 깊은 비판과 팬 메일, 지능적인 기능 제안들 또한 받았다. 여기서 다음과 같은 결론을 이끌어 낼 수 있었다.:
 
-10. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
+10\. If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
 
-10. 베타테스터들을 가장 중요한 자원으로 여긴다면 그들은 정말 가장 중요한 자원이 되어준다. (If you treat your beta-testers as if the're your most valuable resource, they will respond by becoming your most valuable resource)
+10\. 네가 베타테스터들을 너의 가장 가치 있는 자원처럼 대한다면, 그들은 너의 가장 가치 있는 자원이 되는 것으로 응답할 것이다.
 
 One interesting measure of fetchmail's success is the sheer size of the project beta list, fetchmail-friends. At the time of latest revision of this paper (November 2000) it has 287 members and is adding two or three a week.
 
-fetchmail 의 성공을 재는 재미있는 척도 중 하나는 프로젝트 베타테스터 메일링리스트인 fetchmail-friends 의 크기이다. 이 글을 쓰고있을 때 목록에는 249 명이 있었고 1주일에 2~3명이 추가되었다.
+Fetchmail의 성공에 대한 흥미로운 척도 중 하나는 프로젝트 베타테스터 목록, fetchmail-friends의 크기였다. 이 글의 최근 개정 (2000년 11월) 당시에는 287명의 회원이 속해 있었고 일주일에 2~3 명이 추가되고 있었다.
 
 Actually, when I revised in late May 1997 I found the list was beginning to lose members from its high of close to 300 for an interesting reason. Several people have asked me to unsubscribe them because fetchmail is working so well for them that they no longer need to see the list traffic! Perhaps this is part of the normal life-cycle of a mature bazaar-style project.
 
-1997 년 5월말 경에 글을 수정하면서 보니까 목록은 300명 가까이 되었고, 멤버들이 조금씩 줄기 시작했는데 그 이유가 흥미로왔다. 몇몇 사람들이 구독을 중단하면서 fetchmail 이 잘 작동하기 때문에 더 이상 메일링리스트를 보고 있을 이유가 없다고 말했다. 아마 이것이 성숙한 시장 스타일의 프로젝트가 가지는 정상적인 라이프사이클 중 하나일 것이다.
+사실, 1997년 5월 말 경에 글을 수정했을 때, 나는 이 목록이 흥미로운 이유로 300명에 가까웠던 최고점에서 회원을 잃기 시작했다는 것을 발견하였다. 몇몇 사람들이 fetchmail이 잘 작동하기 때문에 더 이상 메일링리스트를 볼 필요가 없다며 나에게 구독 취소를 요청한 것이다! 아마 이것이 성숙한 바자-스타일(bazaar-style) 프로젝트가 가지는 정상적인 수명 주기의 일부일 것이다.
+
 
 ## Popclient becomes Fetchmail
 
@@ -653,7 +668,7 @@ All .fetchmailrc password encryption would have done is give a false sense of se
 
 17. A security system is only as secure as its secret. Beware of pseudo-secrets.
 
-17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets)
+17. 보안시스템은 그것이 보호하려고 하는 비밀만큼만 안전하다. 가짜 비밀들에 주의할 것. (A security system is only as secure as its secret. Beware of pseudo-secrets) 
 
 ## Necessary Preconditions for the Bazaar Style
 
@@ -1007,9 +1022,9 @@ Further, the SNAFU principle predicts in authoritarian organizations a progressi
 
 ## Bibliography
 
-I quoted several bits from Frederick P. Brooks's classic The Mythical Man-Month because, in many respects, his insights have yet to be improved upon. I heartily recommend the 25th Anniversary edition from Addison-Wesley (ISBN 0-201-83595-9), which adds his 1986 ``No Silver Bullet'' paper.
+* I quoted several bits from Frederick P. Brooks's classic The Mythical Man-Month because, in many respects, his insights have yet to be improved upon. I heartily recommend the 25th Anniversary edition from Addison-Wesley (ISBN 0-201-83595-9), which adds his 1986 ``No Silver Bullet'' paper.
 
-The new edition is wrapped up by an invaluable 20-years-later retrospective in which Brooks forthrightly admits to the few judgements in the original text which have not stood the test of time. I first read the retrospective after the first public version of this essay was substantially complete, and was surprised to discover that Brooks attributed bazaar-like practices to Microsoft! (In fact, however, this attribution turned out to be mistaken. In 1998 we learned from the Halloween Documents that Microsoft's internal developer community is heavily balkanized, with the kind of general source access needed to support a bazaar not even truly possible.)
+* The new edition is wrapped up by an invaluable 20-years-later retrospective in which Brooks forthrightly admits to the few judgements in the original text which have not stood the test of time. I first read the retrospective after the first public version of this essay was substantially complete, and was surprised to discover that Brooks attributed bazaar-like practices to Microsoft! (In fact, however, this attribution turned out to be mistaken. In 1998 we learned from the Halloween Documents that Microsoft's internal developer community is heavily balkanized, with the kind of general source access needed to support a bazaar not even truly possible.)
 
 Gerald M. Weinberg's The Psychology Of Computer Programming (New York, Van Nostrand Reinhold 1971) introduced the rather unfortunately-labeled concept of ``egoless programming''. While he was nowhere near the first person to realize the futility of the ``principle of command'', he was probably the first to recognize and argue the point in particular connection with software development.
 
@@ -1021,7 +1036,7 @@ Finally, I must admit that I very nearly called this essay ``The Cathedral and t
 
 ## 읽어볼 만한 글들
 
-프레드릭 브룩스 (Frederick P. Brooks) 의 고전인 [Man-Month 의 신화 (The Mythical Man-Month)]에서 몇몇 부분을 인용했다. 앞으로도 여러 관점에서 그의 통찰력을 발전시킬 수 있을 것이다. 애디슨-웨슬리(Addson-Wesley) 의 25주년 기념판 (ISBN 0-201-83595-9)을 추천한다.여기에는 그가 1986년에 쓴 글, ``은총알은 없다 (No Silver Bullet)''가 들어있다. 새 기념판은 매우 귀중한 20년 후의 회고를 담고 있다. 브룩스는 여기서 원문의 몇몇 판단이 시간이 흐름에 따라 옳지 않은 것으로 드러났다고 솔직하게 인정하고 있다. 나는 이 글을 대략 마무리 지은 후에 회고담을 읽어보았는데, 브룩스가 시장 스타일을 마이크로소프트에서 연유한 관습으로 생각한다는 것을 발견하고 깜짝 놀랐다!
+* 프레드릭 브룩스 (Frederick P. Brooks) 의 고전인 [Man-Month 의 신화 (The Mythical Man-Month)]에서 몇몇 부분을 인용했다. 앞으로도 여러 관점에서 그의 통찰력을 발전시킬 수 있을 것이다. 애디슨-웨슬리(Addson-Wesley) 의 25주년 기념판 (ISBN 0-201-83595-9)을 추천한다.여기에는 그가 1986년에 쓴 글, ``은총알은 없다 (No Silver Bullet)''가 들어있다. 새 기념판은 매우 귀중한 20년 후의 회고를 담고 있다. 브룩스는 여기서 원문의 몇몇 판단이 시간이 흐름에 따라 옳지 않은 것으로 드러났다고 솔직하게 인정하고 있다. 나는 이 글을 대략 마무리 지은 후에 회고담을 읽어보았는데, 브룩스가 시장 스타일을 마이크로소프트에서 연유한 관습으로 생각한다는 것을 발견하고 깜짝 놀랐다!
 
 제랄드 M. 와인버그의 [컴퓨터 프로그래밍의 심리학 (The Psychology Of Computer Programming)] (New York, Van Nostrand Reinhold 1971) 은 비운의 개념인 ``자아를 내세우지 않는 프로그래밍'' 을 소개했다. ``명령의 원칙'' 이 무용지물이라는 것을 처음으로 깨달은 사람이 와인버그는 아니지만 그는 아마도 처음으로 그것을 인식하고 특별히 소프트웨어 개발과 관련하여 논지를 전개시킨 첫 번째 사람일 것이다.
 
